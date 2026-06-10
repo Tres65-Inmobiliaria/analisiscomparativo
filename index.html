@@ -45,7 +45,7 @@
     gap: 16px;
   }
   .header-logo img {
-    height: 64px;
+    height: 88px;
     width: auto;
     display: block;
   }
@@ -516,11 +516,12 @@
     flex-wrap: wrap;
   }
   .footer-brand img {
-    height: 44px;
-    filter: brightness(0) invert(1);
-    opacity: 0.75;
+    height: 72px;
+    width: auto;
     display: block;
     margin-bottom: 12px;
+    mix-blend-mode: screen;
+    opacity: 0.92;
   }
   .footer-brand p {
     font-size: 0.74rem;
@@ -556,51 +557,91 @@
   .reveal { opacity:0; transform:translateY(20px); transition:opacity .6s ease, transform .6s ease; }
   .reveal.visible { opacity:1; transform:none; }
 
-  /* ── MOBILE OVERLAY ── */
+  /* ── CONFIDENTIAL OVERLAY ── */
   #mobile-overlay {
     display: none;
     position: fixed;
     inset: 0;
     z-index: 9999;
-    background: linear-gradient(160deg, var(--teal-deep) 0%, #0d2420 100%);
+    background: linear-gradient(160deg, #0d2420 0%, var(--teal-deep) 100%);
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 36px 28px;
     text-align: center;
   }
-  #mobile-overlay .mo-logo img {
-    height: 52px;
-    filter: brightness(0) invert(1);
-    opacity: 0.85;
+  #mobile-overlay .mo-logo {
     margin-bottom: 28px;
   }
-  #mobile-overlay .mo-icon {
-    font-size: 3rem;
-    margin-bottom: 16px;
-    animation: rotateHint 2.5s ease-in-out infinite;
+  #mobile-overlay .mo-logo img {
+    height: 80px;
+    width: auto;
+    mix-blend-mode: screen;
+    opacity: 0.95;
   }
-  @keyframes rotateHint {
-    0%,100% { transform: rotate(0deg); }
-    40%      { transform: rotate(90deg); }
-    60%      { transform: rotate(90deg); }
+  #mobile-overlay .mo-icon {
+    font-size: 2.4rem;
+    margin-bottom: 14px;
+  }
+  #mobile-overlay .mo-tag {
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--teal-bright);
+    margin-bottom: 14px;
+    border: 1px solid rgba(42,170,153,0.4);
+    padding: 5px 14px;
+    border-radius: 20px;
+    display: inline-block;
   }
   #mobile-overlay h2 {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: #fff;
     line-height: 1.4;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
   }
-  #mobile-overlay p {
-    font-size: 0.8rem;
+  #mobile-overlay .mo-divider {
+    width: 40px;
+    height: 2px;
+    background: var(--teal-bright);
+    border-radius: 2px;
+    margin: 0 auto 20px;
+  }
+  #mobile-overlay .mo-rules {
+    list-style: none;
+    max-width: 340px;
+    margin: 0 auto 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  #mobile-overlay .mo-rules li {
+    font-size: 0.76rem;
     color: rgba(255,255,255,0.65);
-    line-height: 1.7;
-    max-width: 300px;
-    margin-bottom: 32px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    text-align: left;
+    line-height: 1.5;
   }
-  #mobile-overlay p strong { color: rgba(255,255,255,0.9); }
+  #mobile-overlay .mo-rules li::before {
+    content: '—';
+    color: var(--teal-bright);
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  #mobile-overlay .mo-confirm {
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.4);
+    max-width: 300px;
+    margin: 0 auto 28px;
+    font-style: italic;
+    line-height: 1.6;
+  }
   .mo-btn {
     background: var(--teal-bright);
     color: #fff;
@@ -612,40 +653,32 @@
     font-weight: 700;
     letter-spacing: 0.5px;
     cursor: pointer;
-    transition: background .2s, transform .2s;
-    margin-bottom: 12px;
-    display: block;
-    width: 100%;
-    max-width: 260px;
+    transition: background .2s, transform .15s;
+    display: inline-block;
   }
   .mo-btn:hover { background: #23988a; transform: translateY(-2px); }
-  .mo-skip {
-    font-size: 0.7rem;
-    color: rgba(255,255,255,0.35);
-    cursor: pointer;
-    background: none;
-    border: none;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.3px;
-    padding: 4px;
-  }
-  .mo-skip:hover { color: rgba(255,255,255,0.6); }
 </style>
 </head>
 <body>
 
-<!-- MOBILE OVERLAY -->
+<!-- CONFIDENTIAL OVERLAY -->
 <div id="mobile-overlay">
   <div class="mo-logo">
-    <img src="LOGO_INMOBILIARIA.png" alt="TRES65 Inmobiliaria"
-         onerror="this.outerHTML='<span style=\'font-family:Raleway,sans-serif;font-size:1.4rem;font-weight:800;color:#2aaa99\'>TRES65</span>'">
+    <img src="logoblancotres.png" alt="TRES65 Inmobiliaria"
+         onerror="this.outerHTML='<span style=\'font-family:Raleway,sans-serif;font-size:1.6rem;font-weight:800;color:#2aaa99\'>TRES65</span>'">
   </div>
-  <div class="mo-icon">📱</div>
-  <h2>Este reporte está hecho para computadora</h2>
-  <p>En celular las gráficas y tablas podrían desfasarse.<br><br>
-  <strong>Gira tu celular en horizontal</strong> para una mejor experiencia, o ábrelo desde una computadora.</p>
-  <button class="mo-btn" onclick="closeMobileOverlay()">Entendido, proceder →</button>
-  <button class="mo-skip" onclick="closeMobileOverlay()">Ver de todas formas</button>
+  <div class="mo-icon">🔒</div>
+  <div class="mo-tag">Documento Confidencial</div>
+  <h2>Reporte de Uso Interno</h2>
+  <div class="mo-divider"></div>
+  <ul class="mo-rules">
+    <li>Este reporte contiene información comercial estratégica preparada exclusivamente para el asesor y su cliente.</li>
+    <li>Queda estrictamente prohibido compartir, reenviar o publicar este documento sin autorización escrita.</li>
+    <li>No debe reproducirse ni utilizarse con fines distintos a la asesoría para la que fue elaborado.</li>
+    <li>TRES65 Inmobiliaria se reserva todos los derechos sobre el contenido y análisis aquí presentados.</li>
+  </ul>
+  <p class="mo-confirm">Al continuar confirmas que eres el destinatario autorizado de este análisis.</p>
+  <button class="mo-btn" onclick="closeMobileOverlay()">Acepto y accedo al reporte →</button>
 </div>
 
 <!-- HEADER: logo on white -->
@@ -1041,8 +1074,9 @@
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <img src="LOGO_INMOBILIARIA.png" alt="TRES65 Inmobiliaria"
-           onerror="this.outerHTML='<span style=\'font-family:Raleway,sans-serif;font-size:1.2rem;font-weight:800;color:#2aaa99\'>TRES65</span>'">
+      <img src="logoblancotres.png" alt="TRES65 Inmobiliaria"
+           onerror="this.outerHTML='<span style=\'font-family:Raleway,sans-serif;font-size:1.2rem;font-weight:800;color:#2aaa99\'>TRES65</span>'"
+           style="mix-blend-mode:screen;">
       <p>Especialistas en propiedades del<br>Centro Histórico de Mérida, Yucatán.<br>www.tres65inmobiliaria.com</p>
     </div>
     <div class="footer-agent">
@@ -1062,22 +1096,16 @@
 </footer>
 
 <script>
-  // Mobile overlay
+  // Confidential overlay — show always on first load of session
   function closeMobileOverlay() {
     document.getElementById('mobile-overlay').style.display = 'none';
     sessionStorage.setItem('mo_dismissed', '1');
   }
   function checkMobile() {
     if (sessionStorage.getItem('mo_dismissed')) return;
-    const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || window.innerWidth < 768;
-    if (isMobile) document.getElementById('mobile-overlay').style.display = 'flex';
+    document.getElementById('mobile-overlay').style.display = 'flex';
   }
   window.addEventListener('DOMContentLoaded', checkMobile);
-  window.addEventListener('resize', () => {
-    if (sessionStorage.getItem('mo_dismissed')) return;
-    if (window.innerWidth < 768) document.getElementById('mobile-overlay').style.display = 'flex';
-    else document.getElementById('mobile-overlay').style.display = 'none';
-  });
 
   function switchTab(id, btn) {
     document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
