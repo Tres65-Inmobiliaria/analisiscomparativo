@@ -395,6 +395,50 @@
   @keyframes barUp { from{transform:scaleY(0);transform-origin:bottom} to{transform:scaleY(1);transform-origin:bottom} }
 
   /*  COMPARE TABLE  */
+  /* ── TABLE SCROLL (mobile) ── */
+  .table-scroll-hint {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 9px 16px;
+    background: var(--teal-light);
+    border-radius: 8px;
+    border-left: 3px solid var(--teal-bright);
+  }
+  .table-scroll-hint span {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--teal-deep);
+    letter-spacing: 0.5px;
+  }
+  @media (max-width: 768px) {
+    .table-scroll-hint { display: flex; }
+  }
+  .table-scroll-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .table-scroll-container::-webkit-scrollbar { height: 4px; }
+  .table-scroll-container::-webkit-scrollbar-track { background: var(--gray-light); }
+  .table-scroll-container::-webkit-scrollbar-thumb { background: var(--teal-bright); border-radius: 2px; }
+  .sticky-col {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    background: #fff;
+    white-space: nowrap;
+  }
+  .compare-table thead th.sticky-col {
+    background: var(--teal-deep);
+    z-index: 3;
+  }
+  .compare-table tbody tr:hover td.sticky-col { background: var(--off-white); }
+  @media (max-width: 768px) {
+    .compare-table th, .compare-table td { min-width: 150px; }
+    .sticky-col { min-width: 130px !important; }
+  }
+
   .table-wrap {
     background: #fff;
     border-radius: var(--radius);
@@ -923,34 +967,42 @@
     <h2>Tabla comparativa completa</h2>
     <p>Todos los factores decisivos sin filtros</p>
   </div>
+
+  <!-- mobile scroll hint -->
+  <div class="table-scroll-hint" id="tableHint">
+    <span>‹ desliza para ver las tres propiedades ›</span>
+  </div>
+
   <div class="table-wrap reveal">
+    <div class="table-scroll-container">
     <table class="compare-table">
       <thead>
         <tr>
-          <th>Criterio</th>
+          <th class="sticky-col">Criterio</th>
           <th>Casa Oliver</th>
           <th>Casa Hermana</th>
           <th>Casa Suspiro</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>Precio negociado</td><td><span class="hl">~$8.0–8.3M MXN</span></td><td>~$9.6M MXN</td><td>$6.5M MXN</td></tr>
-        <tr><td>Precio/m² construido</td><td><span class="hl">$27–28K MXN</span></td><td>$43K MXN</td><td>$37K MXN</td></tr>
-        <tr><td>Construcción</td><td><span class="hl">300 m²</span></td><td>223 m²</td><td>175 m²</td></tr>
-        <tr><td>Terreno</td><td>354 m²</td><td>242 m²</td><td><span class="hl">381 m²</span></td></tr>
-        <tr><td>Recámaras útiles</td><td><span class="hl">4 + casa huéspedes</span></td><td>3 + cuarto servicio</td><td>3</td></tr>
-        <tr><td>Baños</td><td>3</td><td><span class="hl">4 + medio</span></td><td>3</td></tr>
-        <tr><td>Unidad renta adicional</td><td><span class="yes"> Casa huéspedes 2 niveles</span></td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
-        <tr><td>Amueblada / equipada</td><td><span class="yes"> Total</span></td><td><span class="yes"> Total</span></td><td><span class="yes"> Total</span></td></tr>
-        <tr><td>Estacionamiento</td><td><span class="no">No</span></td><td><span class="no">No</span></td><td><span class="yes"> Techado</span></td></tr>
-        <tr><td>Paneles solares</td><td><span class="yes"> 6 paneles</span></td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
-        <tr><td>Potencial renta/mes</td><td><span class="hl">$90K–$150K MXN</span></td><td>$81K–$130K MXN</td><td>$56K–$90K MXN</td></tr>
-        <tr><td>Presupuesto libre post-compra</td><td>~$1.7–2M MXN</td><td>~$400K MXN</td><td><span class="hl">~$3.5M MXN</span></td></tr>
-        <tr><td>Acepta crédito bancario</td><td><span class="no">No especificado</span></td><td><span class="no">No especificado</span></td><td><span class="yes"> Sí</span></td></tr>
-        <tr><td>Due diligence necesario</td><td>Estándar</td><td><span class="no">Crítico (60 años)</span></td><td>Estándar</td></tr>
-        <tr><td>Lista para operar hoy</td><td><span class="yes"> Inmediata</span></td><td><span class="yes"> Inmediata</span></td><td><span class="yes"> Inmediata</span></td></tr>
+        <tr><td class="sticky-col">Precio negociado</td><td><span class="hl">~$8.0–8.3M MXN</span></td><td>~$9.6M MXN</td><td>$6.5M MXN</td></tr>
+        <tr><td class="sticky-col">Precio/m² construido</td><td><span class="hl">$27–28K MXN</span></td><td>$43K MXN</td><td>$37K MXN</td></tr>
+        <tr><td class="sticky-col">Construcción</td><td><span class="hl">300 m²</span></td><td>223 m²</td><td>175 m²</td></tr>
+        <tr><td class="sticky-col">Terreno</td><td>354 m²</td><td>242 m²</td><td><span class="hl">381 m²</span></td></tr>
+        <tr><td class="sticky-col">Recámaras útiles</td><td><span class="hl">4 + casa huéspedes</span></td><td>3 + cuarto servicio</td><td>3</td></tr>
+        <tr><td class="sticky-col">Baños</td><td>3</td><td><span class="hl">4 + medio</span></td><td>3</td></tr>
+        <tr><td class="sticky-col">Unidad renta adicional</td><td><span class="yes"> Casa huéspedes 2 niveles</span></td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
+        <tr><td class="sticky-col">Amueblada / equipada</td><td><span class="yes"> Total</span></td><td><span class="yes"> Total</span></td><td><span class="yes"> Total</span></td></tr>
+        <tr><td class="sticky-col">Estacionamiento</td><td><span class="no">No</span></td><td><span class="no">No</span></td><td><span class="yes"> Techado</span></td></tr>
+        <tr><td class="sticky-col">Paneles solares</td><td><span class="yes"> 6 paneles</span></td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
+        <tr><td class="sticky-col">Potencial renta/mes</td><td><span class="hl">$90K–$150K MXN</span></td><td>$81K–$130K MXN</td><td>$56K–$90K MXN</td></tr>
+        <tr><td class="sticky-col">Presupuesto libre post-compra</td><td>~$1.7–2M MXN</td><td>~$400K MXN</td><td><span class="hl">~$3.5M MXN</span></td></tr>
+        <tr><td class="sticky-col">Acepta crédito bancario</td><td><span class="no">No especificado</span></td><td><span class="no">No especificado</span></td><td><span class="yes"> Sí</span></td></tr>
+        <tr><td class="sticky-col">Due diligence necesario</td><td>Estándar</td><td><span class="no">Crítico (60 años)</span></td><td>Estándar</td></tr>
+        <tr><td class="sticky-col">Lista para operar hoy</td><td><span class="yes"> Inmediata</span></td><td><span class="yes"> Inmediata</span></td><td><span class="yes"> Inmediata</span></td></tr>
       </tbody>
     </table>
+    </div>
   </div>
 
   <!-- ANALYSIS TABS -->
