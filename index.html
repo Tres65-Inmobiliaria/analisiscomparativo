@@ -33,7 +33,7 @@
     font-size: 15px;
   }
 
-  /* ── HEADER ── */
+  /*  HEADER  */
   .header {
     background: #fff;
     border-bottom: 1px solid var(--gray-light);
@@ -76,7 +76,7 @@
     border-radius: 2px;
   }
 
-  /* ── MARKET BANNER ── */
+  /*  MARKET BANNER  */
   .market-banner {
     background: linear-gradient(135deg, var(--teal-deep) 0%, var(--teal-mid) 100%);
     padding: 28px 48px;
@@ -115,14 +115,14 @@
   }
   @media(max-width:700px){ .market-banner-inner{ grid-template-columns:1fr 1fr; } .market-divider{display:none;} }
 
-  /* ── SECTION WRAPPER ── */
+  /*  SECTION WRAPPER  */
   .wrap {
     max-width: 1080px;
     margin: 0 auto;
     padding: 0 24px;
   }
 
-  /* ── SECTION HEADING ── */
+  /*  SECTION HEADING  */
   .section-head {
     padding: 44px 0 20px;
   }
@@ -140,7 +140,7 @@
     font-weight: 400;
   }
 
-  /* ── PROPERTY CARDS ── */
+  /*  PROPERTY CARDS  */
   .cards-grid {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -204,7 +204,7 @@
     color: var(--gray);
     margin-top: 3px;
   }
-  .p-card-zone::before { content: '📍 '; }
+  .p-card-zone::before { content: ' '; }
 
   .p-price-row {
     padding: 14px 22px;
@@ -287,7 +287,7 @@
     color: var(--teal-deep);
   }
 
-  /* ── SCORE BARS ── */
+  /*  SCORE BARS  */
   .p-scores {
     padding: 14px 22px 18px;
     border-top: 1px solid var(--gray-light);
@@ -322,7 +322,7 @@
   }
   .score-num { font-size: 0.68rem; font-weight: 700; color: var(--teal-deep); width: 24px; text-align: right; }
 
-  /* ── RENT ESTIMATE ── */
+  /*  RENT ESTIMATE  */
   .rent-box {
     margin: 0 22px 18px;
     padding: 12px 14px;
@@ -346,7 +346,7 @@
   }
   .rent-box .rent-note { font-size: 0.68rem; color: var(--gray); margin-top: 2px; }
 
-  /* ── CHARTS ── */
+  /*  CHARTS  */
   .charts-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -394,7 +394,7 @@
   .bar-lbl { font-size:0.65rem; color:var(--gray); text-align:center; font-weight:500; line-height:1.3; }
   @keyframes barUp { from{transform:scaleY(0);transform-origin:bottom} to{transform:scaleY(1);transform-origin:bottom} }
 
-  /* ── COMPARE TABLE ── */
+  /*  COMPARE TABLE  */
   .table-wrap {
     background: #fff;
     border-radius: var(--radius);
@@ -423,7 +423,7 @@
   .yes { color:var(--teal-bright); font-weight:700; }
   .no  { color:#c97070; }
 
-  /* ── TABS ── */
+  /*  TABS  */
   .tabs-nav {
     display: flex;
     gap: 4px;
@@ -477,11 +477,11 @@
     line-height:1.5;
   }
   .a-box ul li::before { content:'→'; position:absolute; left:0; color:var(--teal-bright); font-weight:700; }
-  .a-box ul li.pro::before { content:'✓'; color:#2aaa99; }
-  .a-box ul li.con::before { content:'✗'; color:#c97070; }
+  .a-box ul li.pro::before { content:''; color:#2aaa99; }
+  .a-box ul li.con::before { content:''; color:#c97070; }
   .a-box ul li strong { color:var(--dark); }
 
-  /* ── VERDICTS ── */
+  /*  VERDICTS  */
   .verdicts-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
   @media(max-width:860px){ .verdicts-grid{grid-template-columns:1fr;} }
 
@@ -500,7 +500,7 @@
   .v-title { font-family:'Raleway',sans-serif; font-size:0.95rem; font-weight:700; color:var(--dark); margin-bottom:8px; }
   .v-text { font-size:0.76rem; color:var(--gray); line-height:1.6; }
 
-  /* ── FOOTER ── */
+  /*  FOOTER  */
   .footer {
     background: var(--dark);
     margin-top: 44px;
@@ -520,7 +520,8 @@
     width: auto;
     display: block;
     margin-bottom: 12px;
-    mix-blend-mode: screen;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
   }
   .footer-brand p {
     font-size: 0.74rem;
@@ -552,11 +553,11 @@
     display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px;
   }
 
-  /* ── REVEAL ── */
+  /*  REVEAL  */
   .reveal { opacity:0; transform:translateY(20px); transition:opacity .6s ease, transform .6s ease; }
   .reveal.visible { opacity:1; transform:none; }
 
-  /* ── CONFIDENTIAL OVERLAY ── */
+  /*  CONFIDENTIAL OVERLAY  */
   #mobile-overlay {
     display: none;
     position: fixed;
@@ -575,7 +576,7 @@
   #mobile-overlay .mo-logo img {
     height: 80px;
     width: auto;
-    mix-blend-mode: screen;
+    filter: brightness(0) invert(1);
     opacity: 0.95;
   }
   #mobile-overlay .mo-icon {
@@ -666,7 +667,7 @@
     <img src="logoblancotres.png" alt="TRES65 Inmobiliaria"
          onerror="this.outerHTML='<span style=\'font-family:Raleway,sans-serif;font-size:1.6rem;font-weight:800;color:#2aaa99\'>TRES65</span>'">
   </div>
-  <div class="mo-icon">🔒</div>
+  <div class="mo-icon">⊘</div>
   <div class="mo-tag">Documento Confidencial</div>
   <h2>Reporte de Uso Interno</h2>
   <div class="mo-divider"></div>
@@ -729,7 +730,7 @@
 
     <!-- CASA OLIVER -->
     <div class="p-card top-pick reveal">
-      <div class="p-badge badge-top">⭐ Primera opción</div>
+      <div class="p-badge badge-top">★ Primera opción</div>
       <div class="p-card-head">
         <div class="p-card-id">EB-VV4690</div>
         <div class="p-card-name">Casa Oliver</div>
@@ -747,19 +748,19 @@
         <div class="p-stat"><div class="p-stat-lbl">Construcción</div><div class="p-stat-val">300 m²</div></div>
         <div class="p-stat"><div class="p-stat-lbl">Terreno</div><div class="p-stat-val">354 m²</div></div>
         <div class="p-stat"><div class="p-stat-lbl">Enganche</div><div class="p-stat-val">10%</div></div>
-        <div class="p-stat"><div class="p-stat-lbl">Estado</div><div class="p-stat-val">Amueblada ✓</div></div>
+        <div class="p-stat"><div class="p-stat-lbl">Estado</div><div class="p-stat-val">Amueblada </div></div>
       </div>
       <div class="p-desc">Colonial yucateca + contemporáneo. Casa huéspedes independiente de 2 niveles — privacidad total para visitas o renta dual. Equipada y lista para generar ingreso en menos de 30 días desde la firma.</div>
       <div class="p-tags">
-        <span class="p-tag">🏠 Casa huéspedes</span>
-        <span class="p-tag">☀️ 6 paneles solares</span>
-        <span class="p-tag">🏊 Alberca nueva</span>
-        <span class="p-tag">🛋️ Todo incluido</span>
-        <span class="p-tag">💧 Cisterna + pozo</span>
-        <span class="p-tag">🐾 Pet friendly</span>
+        <span class="p-tag">⌂ Casa huéspedes</span>
+        <span class="p-tag">◈ 6 paneles solares</span>
+        <span class="p-tag">◉ Alberca nueva</span>
+        <span class="p-tag">✦ Todo incluido</span>
+        <span class="p-tag">◈ Cisterna + pozo</span>
+        <span class="p-tag">◦ Pet friendly</span>
       </div>
       <div class="rent-box">
-        <div class="rent-lbl">💰 Renta estimada mensual</div>
+        <div class="rent-lbl">§ Renta estimada mensual</div>
         <div class="rent-val">$90K – $150K MXN</div>
         <div class="rent-note">Casa principal $3,500–$5,500/noche · Casa huéspedes $1,800–$2,500/noche · Renta conjunta o separada</div>
       </div>
@@ -774,7 +775,7 @@
 
     <!-- CASA HERMANA -->
     <div class="p-card reveal">
-      <div class="p-badge badge-gold">Segunda opción</div>
+      <div class="p-badge badge-gold">◆ Segunda opción</div>
       <div class="p-card-head">
         <div class="p-card-id">Calle 51 #474A</div>
         <div class="p-card-name">Casa Hermana</div>
@@ -792,19 +793,19 @@
         <div class="p-stat"><div class="p-stat-lbl">Construcción</div><div class="p-stat-val">223 m²</div></div>
         <div class="p-stat"><div class="p-stat-lbl">Terreno</div><div class="p-stat-val">242 m²</div></div>
         <div class="p-stat"><div class="p-stat-lbl">Niveles</div><div class="p-stat-val">3 pisos</div></div>
-        <div class="p-stat"><div class="p-stat-lbl">Estado</div><div class="p-stat-val">Amueblada ✓</div></div>
+        <div class="p-stat"><div class="p-stat-lbl">Estado</div><div class="p-stat-val">Amueblada </div></div>
       </div>
-      <div class="p-desc">Fachada colonial auténtica en Calle 51 — corazón del centro histórico. 4.5 baños son el diferenciador clave para familia con 3 hijas. 3 niveles + terraza con potencial de roof garden. Cuarto de servicio incluido. Requiere due diligence por antigüedad de 60 años.</div>
+      <div class="p-desc">Fachada colonial auténtica en Calle 51 — corazón del centro histórico. 4.5 baños son el diferenciador clave para familia con 3 hijas.◈ 3 niveles + terraza con potencial de roof garden. Cuarto de servicio incluido. Requiere due diligence por antigüedad de 60 años.</div>
       <div class="p-tags">
-        <span class="p-tag">🏊 Alberca</span>
-        <span class="p-tag">🌿 Jardín interior</span>
-        <span class="p-tag">🏛️ 3 niveles</span>
-        <span class="p-tag">🛎️ Cuarto servicio</span>
-        <span class="p-tag">🌇 Terraza</span>
-        <span class="p-tag">🐾 Pet friendly</span>
+        <span class="p-tag">◉ Alberca</span>
+        <span class="p-tag">◦ Jardín interior</span>
+        <span class="p-tag">◈ 3 niveles</span>
+        <span class="p-tag">◦ Cuarto servicio</span>
+        <span class="p-tag">◦ Terraza</span>
+        <span class="p-tag">◦ Pet friendly</span>
       </div>
       <div class="rent-box">
-        <div class="rent-lbl">💰 Renta estimada mensual</div>
+        <div class="rent-lbl">§ Renta estimada mensual</div>
         <div class="rent-val">$81K – $130K MXN</div>
         <div class="rent-note">$4,500–$6,500/noche · 18–20 noches/mes · 3 recámaras en ubicación premium Calle 51</div>
       </div>
@@ -819,7 +820,7 @@
 
     <!-- CASA SUSPIRO -->
     <div class="p-card reveal">
-      <div class="p-badge badge-value">Mejor entrada</div>
+      <div class="p-badge badge-value">› Mejor entrada</div>
       <div class="p-card-head">
         <div class="p-card-id">EB-WD4928</div>
         <div class="p-card-name">Casa Suspiro</div>
@@ -834,21 +835,21 @@
         <div class="p-stat"><div class="p-stat-lbl">Recámaras</div><div class="p-stat-val">3</div></div>
         <div class="p-stat"><div class="p-stat-lbl">Baños</div><div class="p-stat-val">3</div></div>
         <div class="p-stat"><div class="p-stat-lbl">Construcción</div><div class="p-stat-val">175 m²</div></div>
-        <div class="p-stat"><div class="p-stat-lbl">Terreno</div><div class="p-stat-val">381 m² ★</div></div>
-        <div class="p-stat"><div class="p-stat-lbl">Enganche</div><div class="p-stat-val">20% / Crédito ✓</div></div>
-        <div class="p-stat"><div class="p-stat-lbl">Estado</div><div class="p-stat-val">Amueblada ✓</div></div>
+        <div class="p-stat"><div class="p-stat-lbl">Terreno</div><div class="p-stat-val">381 m² </div></div>
+        <div class="p-stat"><div class="p-stat-lbl">Enganche</div><div class="p-stat-val">20% / Crédito </div></div>
+        <div class="p-stat"><div class="p-stat-lbl">Estado</div><div class="p-stat-val">Amueblada </div></div>
       </div>
-      <div class="p-desc">El mayor terreno de las tres en Centro Histórico — activo escaso y subestimado. Materiales auténticos: madera Tzalam, Chukum, pisos de pasta. Estacionamiento techado. La más hermosa estéticamente, pero con menor capacidad para familia grande simultánea.</div>
+      <div class="p-desc">El mayor terreno de las tres en Centro Histórico — activo escaso y subestimado. Materiales auténticos: madera Tzalam, Chukum, pisos de pasta.◈ Estacionamiento techado. La más hermosa estéticamente, pero con menor capacidad para familia grande simultánea.</div>
       <div class="p-tags">
-        <span class="p-tag">🏊 Alberca Chukum</span>
-        <span class="p-tag">🚗 Estacionamiento</span>
-        <span class="p-tag">🌿 Mayor terreno</span>
-        <span class="p-tag">🛋️ Todo incluido</span>
-        <span class="p-tag">💡 Domos luz nat.</span>
-        <span class="p-tag">🌱 Riego automático</span>
+        <span class="p-tag">◉ Alberca Chukum</span>
+        <span class="p-tag">◈ Estacionamiento</span>
+        <span class="p-tag">◦ Mayor terreno</span>
+        <span class="p-tag">✦ Todo incluido</span>
+        <span class="p-tag">◈ Domos luz natural</span>
+        <span class="p-tag">◦ Riego automático</span>
       </div>
       <div class="rent-box">
-        <div class="rent-lbl">💰 Renta estimada mensual</div>
+        <div class="rent-lbl">§ Renta estimada mensual</div>
         <div class="rent-val">$56K – $90K MXN</div>
         <div class="rent-note">$2,800–$4,500/noche · Menor capacidad por tamaño · Mayor ahorro en mantenimiento</div>
       </div>
@@ -927,9 +928,9 @@
       <thead>
         <tr>
           <th>Criterio</th>
-          <th>🏠 Casa Oliver</th>
-          <th>🏛️ Casa Hermana</th>
-          <th>🌿 Casa Suspiro</th>
+          <th>Casa Oliver</th>
+          <th>Casa Hermana</th>
+          <th>Casa Suspiro</th>
         </tr>
       </thead>
       <tbody>
@@ -939,15 +940,15 @@
         <tr><td>Terreno</td><td>354 m²</td><td>242 m²</td><td><span class="hl">381 m²</span></td></tr>
         <tr><td>Recámaras útiles</td><td><span class="hl">4 + casa huéspedes</span></td><td>3 + cuarto servicio</td><td>3</td></tr>
         <tr><td>Baños</td><td>3</td><td><span class="hl">4 + medio</span></td><td>3</td></tr>
-        <tr><td>Unidad renta adicional</td><td><span class="yes">✓ Casa huéspedes 2 niveles</span></td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
-        <tr><td>Amueblada / equipada</td><td><span class="yes">✓ Total</span></td><td><span class="yes">✓ Total</span></td><td><span class="yes">✓ Total</span></td></tr>
-        <tr><td>Estacionamiento</td><td><span class="no">No</span></td><td><span class="no">No</span></td><td><span class="yes">✓ Techado</span></td></tr>
-        <tr><td>Paneles solares</td><td><span class="yes">✓ 6 paneles</span></td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
+        <tr><td>Unidad renta adicional</td><td><span class="yes"> Casa huéspedes 2 niveles</span></td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
+        <tr><td>Amueblada / equipada</td><td><span class="yes"> Total</span></td><td><span class="yes"> Total</span></td><td><span class="yes"> Total</span></td></tr>
+        <tr><td>Estacionamiento</td><td><span class="no">No</span></td><td><span class="no">No</span></td><td><span class="yes"> Techado</span></td></tr>
+        <tr><td>Paneles solares</td><td><span class="yes"> 6 paneles</span></td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
         <tr><td>Potencial renta/mes</td><td><span class="hl">$90K–$150K MXN</span></td><td>$81K–$130K MXN</td><td>$56K–$90K MXN</td></tr>
         <tr><td>Presupuesto libre post-compra</td><td>~$1.7–2M MXN</td><td>~$400K MXN</td><td><span class="hl">~$3.5M MXN</span></td></tr>
-        <tr><td>Acepta crédito bancario</td><td><span class="no">No especificado</span></td><td><span class="no">No especificado</span></td><td><span class="yes">✓ Sí</span></td></tr>
+        <tr><td>Acepta crédito bancario</td><td><span class="no">No especificado</span></td><td><span class="no">No especificado</span></td><td><span class="yes"> Sí</span></td></tr>
         <tr><td>Due diligence necesario</td><td>Estándar</td><td><span class="no">Crítico (60 años)</span></td><td>Estándar</td></tr>
-        <tr><td>Lista para operar hoy</td><td><span class="yes">✓ Inmediata</span></td><td><span class="yes">✓ Inmediata</span></td><td><span class="yes">✓ Inmediata</span></td></tr>
+        <tr><td>Lista para operar hoy</td><td><span class="yes"> Inmediata</span></td><td><span class="yes"> Inmediata</span></td><td><span class="yes"> Inmediata</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -959,15 +960,15 @@
   </div>
   <div class="reveal">
     <div class="tabs-nav">
-      <button class="tab-btn active" onclick="switchTab('inv',this)">💰 Máxima inversión</button>
-      <button class="tab-btn" onclick="switchTab('fam',this)">👨‍👩‍👧 Uso familiar</button>
-      <button class="tab-btn" onclick="switchTab('bal',this)">⚖️ Equilibrio</button>
+      <button class="tab-btn active" onclick="switchTab('inv',this)">↑ Máxima inversión</button>
+      <button class="tab-btn" onclick="switchTab('fam',this)">◈ Uso familiar</button>
+      <button class="tab-btn" onclick="switchTab('bal',this)">— Equilibrio</button>
     </div>
 
     <div class="tab-pane active" id="tab-inv">
       <div class="analysis-grid">
         <div class="a-box">
-          <h4>🏆 Casa Oliver es la respuesta</h4>
+          <h4>› Casa Oliver es la respuesta</h4>
           <ul>
             <li class="pro"><strong>Mayor ROI potencial:</strong> único inmueble con unidad de renta independiente — ingreso dual desde día uno</li>
             <li class="pro"><strong>Precio/m² más bajo</strong> — el mercado no ha valuado correctamente la casa huéspedes</li>
@@ -978,7 +979,7 @@
           </ul>
         </div>
         <div class="a-box">
-          <h4>¿Por qué no las otras dos?</h4>
+          <h4>— ¿Por qué no las otras dos?</h4>
           <ul>
             <li class="con"><strong>Casa Hermana:</strong> a $9.6M deja solo ~$400K libre — margen mínimo de operación</li>
             <li class="con"><strong>Casa Hermana:</strong> due diligence profundo por 60 años de antigüedad añade riesgo y tiempo</li>
@@ -993,17 +994,17 @@
     <div class="tab-pane" id="tab-fam">
       <div class="analysis-grid">
         <div class="a-box">
-          <h4>Para familia con 3 hijas adultas</h4>
+          <h4>› Para familia con 3 hijas adultas</h4>
           <ul>
             <li class="pro"><strong>Casa Oliver:</strong> casa huéspedes independiente resuelve privacidad para hijas con parejas sin fricciones — valor real que no tiene precio en m²</li>
             <li class="pro"><strong>Casa Hermana:</strong> 4.5 baños es el diferenciador — nadie comparte baño con nadie, fundamental en convivencia familiar intensa</li>
-            <li class="con"><strong>Casa Hermana:</strong> 3 niveles puede ser limitante con el tiempo — accesibilidad y movilidad son factores a proyectar a 10 años</li>
+            <li class="con"><strong>Casa Hermana:</strong>◈ 3 niveles puede ser limitante con el tiempo — accesibilidad y movilidad son factores a proyectar a 10 años</li>
             <li class="pro"><strong>Casa Suspiro:</strong> 1 sola planta, estacionamiento — la más cómoda para uso cotidiano pero <strong>sin privacidad para visitas múltiples</strong></li>
             <li class="con"><strong>Casa Suspiro:</strong> 175 m² para 5+ personas en uso simultáneo se siente limitado</li>
           </ul>
         </div>
         <div class="a-box">
-          <h4>Factores de comodidad comparados</h4>
+          <h4>— Factores de comodidad comparados</h4>
           <ul>
             <li><strong>Espacio total:</strong> Oliver (300m²) › Hermana (223m²) › Suspiro (175m²)</li>
             <li><strong>Privacidad visitas:</strong> Oliver (casa huéspedes) › Hermana (3 niveles) › Suspiro (todo junto)</li>
@@ -1019,16 +1020,16 @@
     <div class="tab-pane" id="tab-bal">
       <div class="analysis-grid">
         <div class="a-box">
-          <h4>⚖️ Recomendación final objetiva</h4>
+          <h4>› Recomendación final objetiva</h4>
           <ul>
             <li class="pro"><strong>Presupuesto ≤$8.5M:</strong> Casa Oliver negociada — mejor relación calidad/precio/potencial de las tres, sin discusión</li>
             <li class="pro"><strong>Prioridad: baños y estatus de dirección:</strong> Casa Hermana a $9.6M — Calle 51 Centro es una dirección que el mercado siempre reconocerá</li>
             <li class="pro"><strong>Con crédito bancario o presupuesto ajustado:</strong> Casa Suspiro — precio honesto, mayor terreno, acepta financiamiento</li>
-            <li class="pro"><strong>Para el perfil específico descrito (uso mixto + familia):</strong> Casa Oliver gana por margen amplio</li>
+            <li class="pro"><strong>Para el perfil específico descrito (uso mixto + familia):</strong>› Casa Oliver gana por margen amplio</li>
           </ul>
         </div>
         <div class="a-box">
-          <h4>El argumento de negociación de Oliver</h4>
+          <h4>— El argumento de negociación de Oliver</h4>
           <ul>
             <li>Precio de lista $8,665,000 — pedir $7,800,000–$8,000,000</li>
             <li><strong>Argumento:</strong> pago de contado/rápido, sin intermediarios adicionales, cierre en menos de 45 días</li>
@@ -1048,19 +1049,19 @@
   </div>
   <div class="verdicts-grid">
     <div class="v-card reveal">
-      <div class="v-icon">💹</div>
+      <div class="v-icon">▲</div>
       <div class="v-prop">Mejor inversión · EB-VV4690</div>
       <div class="v-title">Casa Oliver gana</div>
       <p class="v-text">El precio/m² más bajo de las tres, la única con unidad de renta independiente, y $2M de margen post-compra. La casa huéspedes independiente para familia con hijas adultas con parejas vale más que cualquier metro cuadrado adicional. <strong>Primera opción sin duda.</strong></p>
     </div>
     <div class="v-card v-gold reveal">
-      <div class="v-icon">👑</div>
+      <div class="v-icon">◆</div>
       <div class="v-prop">Prestigio · Calle 51 #474A</div>
       <div class="v-title">Casa Hermana es la dirección</div>
       <p class="v-text">A $9.6M con todo incluido, los 4.5 baños y la ubicación en Calle 51 Centro son argumentos reales para familia que prioriza confort y estatus de dirección. Segunda opción sólida — con due diligence limpio en instalaciones.</p>
     </div>
     <div class="v-card v-dark reveal">
-      <div class="v-icon">🌿</div>
+      <div class="v-icon">◦</div>
       <div class="v-prop">Mejor entrada · EB-WD4928</div>
       <div class="v-title">Casa Suspiro es la más hermosa</div>
       <p class="v-text">La más estética de las tres y la que deja más capital libre. Ideal para pareja o comprador individual, o para quien usa crédito bancario. Para este perfil familiar específico queda corta en espacio — pero estéticamente es imbatible.</p>
@@ -1075,14 +1076,14 @@
     <div class="footer-brand">
       <img src="logoblancotres.png" alt="TRES65 Inmobiliaria"
            onerror="this.outerHTML='<span style=\'font-family:Raleway,sans-serif;font-size:1.2rem;font-weight:800;color:#2aaa99\'>TRES65</span>'"
-           style="mix-blend-mode:screen;">
+           style="filter: brightness(0) invert(1);">
       <p>Especialistas en propiedades del<br>Centro Histórico de Mérida, Yucatán.<br>www.tres65inmobiliaria.com</p>
     </div>
     <div class="footer-agent">
       <div class="agent-name">Damara Traconis Corres</div>
       <div class="agent-role">Agente Inmobiliario · TRES65 Inmobiliaria</div>
       <div class="agent-contact">
-        📱 +52 999 278 6153<br>
+        +52 999 278 6153<br>
         <a href="mailto:damara@tres65inmobiliaria.com">damara@tres65inmobiliaria.com</a>
       </div>
     </div>
