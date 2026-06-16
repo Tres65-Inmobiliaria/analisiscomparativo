@@ -3,7 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Análisis Comparativo · TRES65 Inmobiliaria</title>
+<title>Una inversión pensada para su familia, con visión de futuro · TRES65</title>
+<meta property="og:title" content="Tu inversión, analizada con el cuidado que merece.">
+<meta property="og:description" content="Análisis comparativo preparado especialmente para ti por TRES65 Inmobiliaria.">
+<meta property="og:image" content="https://tres65-inmobiliaria.github.io/ReporteDepasUniversitarios/LOGO_INMOBILIARIA.png">
+<meta property="og:image:width" content="939">
+<meta property="og:image:height" content="455">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tres65-inmobiliaria.github.io/ReporteDepasUniversitarios">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tu inversión, analizada con el cuidado que merece.">
+<meta name="twitter:description" content="Análisis comparativo preparado especialmente para ti por TRES65 Inmobiliaria.">
+<meta name="twitter:image" content="https://tres65-inmobiliaria.github.io/ReporteDepasUniversitarios/LOGO_INMOBILIARIA.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -24,439 +35,130 @@
     --radius: 12px;
   }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Montserrat', sans-serif; background: var(--off-white); color: var(--dark); line-height: 1.6; font-size: 15px; }
 
-  body {
-    font-family: 'Montserrat', sans-serif;
-    background: var(--off-white);
-    color: var(--dark);
-    line-height: 1.6;
-    font-size: 15px;
-  }
+  /* HEADER */
+  .header { background: #fff; border-bottom: 1px solid var(--gray-light); padding: 20px 48px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+  .header-logo img { width: 147px; height: auto; display: block; }
+  .header-meta { text-align: right; }
+  .header-meta h1 { font-family: 'Raleway', sans-serif; font-size: 1.25rem; font-weight: 700; color: var(--teal-deep); letter-spacing: -0.3px; line-height: 1.3; }
+  .header-meta .tagline { font-size: 0.75rem; color: var(--gray); font-weight: 400; letter-spacing: 0.5px; margin-top: 3px; }
+  .header-accent { display: block; width: 40px; height: 2px; background: var(--teal-bright); margin: 6px 0 0 auto; border-radius: 2px; }
 
-  /*  HEADER  */
-  .header {
-    background: #fff;
-    border-bottom: 1px solid var(--gray-light);
-    padding: 20px 48px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-  .header-logo img {
-    height: 88px;
-    width: auto;
-    display: block;
-  }
-  .header-meta {
-    text-align: right;
-  }
-  .header-meta h1 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--teal-deep);
-    letter-spacing: -0.3px;
-    line-height: 1.3;
-  }
-  .header-meta .tagline {
-    font-size: 0.75rem;
-    color: var(--gray);
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    margin-top: 3px;
-  }
-  .header-accent {
-    display: block;
-    width: 40px;
-    height: 2px;
-    background: var(--teal-bright);
-    margin: 6px 0 0 auto;
-    border-radius: 2px;
-  }
-
-  /*  MARKET BANNER  */
-  .market-banner {
-    background: linear-gradient(135deg, var(--teal-deep) 0%, var(--teal-mid) 100%);
-    padding: 28px 48px;
-  }
-  .market-banner-inner {
-    max-width: 1080px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    align-items: center;
-  }
-  .market-stat {
-    text-align: center;
-  }
-  .market-stat .val {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: #fff;
-    line-height: 1.1;
-  }
-  .market-stat .lbl {
-    font-size: 0.68rem;
-    color: rgba(255,255,255,0.65);
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    margin-top: 4px;
-    font-weight: 500;
-  }
-  .market-divider {
-    width: 1px;
-    height: 40px;
-    background: rgba(255,255,255,0.15);
-    margin: 0 auto;
-  }
+  /* MARKET BANNER */
+  .market-banner { background: linear-gradient(135deg, #0d2420 0%, var(--teal-deep) 100%); padding: 28px 48px; }
+  .market-banner-inner { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; align-items: center; }
+  .market-stat { text-align: center; }
+  .market-stat .val { font-family: 'Raleway', sans-serif; font-size: 1.5rem; font-weight: 800; color: #fff; line-height: 1.1; }
+  .market-stat .lbl { font-size: 0.68rem; color: rgba(255,255,255,0.65); letter-spacing: 0.8px; text-transform: uppercase; margin-top: 4px; font-weight: 500; }
+  .market-divider { width: 1px; height: 40px; background: rgba(255,255,255,0.15); margin: 0 auto; }
   @media(max-width:700px){ .market-banner-inner{ grid-template-columns:1fr 1fr; } .market-divider{display:none;} }
 
-  /*  SECTION WRAPPER  */
-  .wrap {
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
+  /* WRAP */
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
 
-  /*  SECTION HEADING  */
-  .section-head {
-    padding: 44px 0 20px;
-  }
-  .section-head h2 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--teal-deep);
-    letter-spacing: -0.2px;
-  }
-  .section-head p {
-    font-size: 0.82rem;
-    color: var(--gray);
-    margin-top: 5px;
-    font-weight: 400;
-  }
+  /* SECTION HEAD */
+  .section-head { padding: 44px 0 20px; }
+  .section-head h2 { font-family: 'Raleway', sans-serif; font-size: 1.3rem; font-weight: 700; color: var(--teal-deep); letter-spacing: -0.2px; }
+  .section-head p { font-size: 0.82rem; color: var(--gray); margin-top: 5px; }
 
-  /*  PROPERTY CARDS  */
-  .cards-grid {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
-    padding-bottom: 8px;
-  }
-  @media(max-width:860px){ .cards-grid{ grid-template-columns:1fr; } }
-
-  .p-card {
-    background: #fff;
+  /* PROFILE BANNER */
+  .profile-banner {
+    background: var(--white);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
-    border: 1.5px solid transparent;
-    overflow: hidden;
-    transition: transform .25s, box-shadow .25s, border-color .25s;
-    position: relative;
+    padding: 24px 28px;
+    margin-bottom: 8px;
+    border-left: 4px solid var(--teal-bright);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
   }
-  .p-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-hover);
-    border-color: var(--teal-bright);
-  }
+  @media(max-width:680px){ .profile-banner{ grid-template-columns:1fr; } }
+  .profile-item .p-lbl { font-size: 0.62rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--gray); margin-bottom: 4px; }
+  .profile-item .p-val { font-size: 0.85rem; font-weight: 600; color: var(--dark); line-height: 1.5; }
+  .profile-item .p-val span { color: var(--teal-bright); font-weight: 700; }
+
+  /* PROPERTY CARDS */
+  .cards-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; padding-bottom: 8px; }
+  @media(max-width:680px){ .cards-grid{ grid-template-columns:1fr; } }
+
+  .p-card { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); border: 1.5px solid transparent; overflow: hidden; transition: transform .25s, box-shadow .25s, border-color .25s; position: relative; }
+  .p-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); border-color: var(--teal-bright); }
   .p-card.top-pick { border-color: var(--teal-mid); }
 
-  .p-badge {
-    position: absolute;
-    top: 12px; right: 12px;
-    font-size: 0.6rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    padding: 4px 10px;
-    border-radius: 20px;
-    z-index: 2;
-  }
-  .badge-top    { background: var(--teal-deep); color: #fff; }
-  .badge-gold   { background: var(--gold); color: #fff; }
-  .badge-value  { background: var(--teal-light); color: var(--teal-deep); }
+  .p-badge { position: absolute; top: 12px; right: 12px; font-size: 0.6rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 4px 10px; border-radius: 20px; z-index: 2; }
+  .badge-top  { background: var(--teal-deep); color: #fff; }
+  .badge-alt  { background: var(--gold); color: #fff; }
 
-  .p-card-head {
-    padding: 22px 22px 14px;
-    border-bottom: 1px solid var(--gray-light);
-  }
-  .p-card-id {
-    font-size: 0.62rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: var(--teal-bright);
-    text-transform: uppercase;
-    margin-bottom: 6px;
-  }
-  .p-card-name {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.05rem;
-    font-weight: 700;
-    color: var(--dark);
-    line-height: 1.3;
-  }
-  .p-card-zone {
-    font-size: 0.75rem;
-    color: var(--gray);
-    margin-top: 3px;
-  }
-  .p-card-zone::before { content: ' '; }
+  .p-card-head { padding: 22px 22px 14px; border-bottom: 1px solid var(--gray-light); }
+  .p-card-id { font-size: 0.62rem; font-weight: 700; letter-spacing: 2px; color: var(--teal-bright); text-transform: uppercase; margin-bottom: 6px; }
+  .p-card-name { font-family: 'Raleway', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--dark); line-height: 1.3; }
+  .p-card-dev { font-size: 0.78rem; color: var(--teal-mid); font-weight: 600; margin-top: 2px; }
+  .p-card-zone { font-size: 0.75rem; color: var(--gray); margin-top: 3px; }
+  .p-card-zone::before { content: '◦ '; }
 
-  .p-price-row {
-    padding: 14px 22px;
-    background: linear-gradient(to right, var(--teal-light), #fff);
-    display: flex;
-    align-items: baseline;
-    gap: 6px;
-    flex-wrap: wrap;
-  }
-  .p-price-ask {
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.72rem;
-    color: var(--gray);
-    text-decoration: line-through;
-    font-weight: 500;
-  }
-  .p-price-real {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.45rem;
-    font-weight: 800;
-    color: var(--teal-deep);
-    line-height: 1;
-  }
-  .p-price-cur {
-    font-size: 0.7rem;
-    font-weight: 600;
-    color: var(--teal-mid);
-  }
-  .p-price-m2 {
-    font-size: 0.68rem;
-    color: var(--gray);
-    margin-left: auto;
-    font-weight: 500;
-    white-space: nowrap;
-  }
+  .p-price-row { padding: 14px 22px; background: linear-gradient(to right, var(--teal-light), #fff); display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+  .p-price-ask { font-family: 'Raleway', sans-serif; font-size: 0.72rem; color: var(--gray); text-decoration: line-through; font-weight: 500; }
+  .p-price-real { font-family: 'Raleway', sans-serif; font-size: 1.45rem; font-weight: 800; color: var(--teal-deep); line-height: 1; }
+  .p-price-cur { font-size: 0.7rem; font-weight: 600; color: var(--teal-mid); }
+  .p-price-m2 { font-size: 0.68rem; color: var(--gray); margin-left: auto; font-weight: 500; white-space: nowrap; }
 
-  .p-stats {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 1px;
-    background: var(--gray-light);
-  }
-  .p-stat {
-    background: #fff;
-    padding: 10px 14px;
-  }
-  .p-stat-lbl {
-    font-size: 0.6rem;
-    font-weight: 700;
-    color: var(--gray);
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-  }
-  .p-stat-val {
-    font-size: 0.88rem;
-    font-weight: 600;
-    color: var(--dark);
-    margin-top: 1px;
-  }
+  .p-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--gray-light); }
+  .p-stat { background: #fff; padding: 10px 14px; }
+  .p-stat-lbl { font-size: 0.6rem; font-weight: 700; color: var(--gray); letter-spacing: 0.8px; text-transform: uppercase; }
+  .p-stat-val { font-size: 0.88rem; font-weight: 600; color: var(--dark); margin-top: 1px; }
 
-  .p-desc {
-    padding: 16px 22px 10px;
-    font-size: 0.78rem;
-    color: var(--gray);
-    line-height: 1.65;
-  }
+  .p-desc { padding: 16px 22px 10px; font-size: 0.78rem; color: var(--gray); line-height: 1.65; }
 
-  .p-tags {
-    padding: 0 22px 16px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-  .p-tag {
-    font-size: 0.65rem;
-    font-weight: 600;
-    padding: 3px 9px;
-    border-radius: 20px;
-    background: var(--teal-light);
-    color: var(--teal-deep);
-  }
+  .p-tags { padding: 0 22px 16px; display: flex; flex-wrap: wrap; gap: 5px; }
+  .p-tag { font-size: 0.65rem; font-weight: 600; padding: 3px 9px; border-radius: 20px; background: var(--teal-light); color: var(--teal-deep); }
+  .p-tag.gold { background: var(--gold-light); color: #8a6b1a; }
 
-  /*  SCORE BARS  */
-  .p-scores {
-    padding: 14px 22px 18px;
-    border-top: 1px solid var(--gray-light);
-  }
-  .scores-lbl {
-    font-size: 0.62rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--gray);
-    margin-bottom: 10px;
-  }
-  .score-row {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 7px;
-  }
-  .score-name { font-size: 0.68rem; color: var(--dark); width: 90px; flex-shrink: 0; }
-  .score-bg {
-    flex: 1;
-    height: 5px;
-    background: var(--gray-light);
-    border-radius: 3px;
-    overflow: hidden;
-  }
-  .score-fill {
-    height: 100%;
-    border-radius: 3px;
-    background: linear-gradient(to right, var(--teal-mid), var(--teal-bright));
-    transition: width 1.2s cubic-bezier(.4,0,.2,1);
-  }
+  /* MAINT BOX */
+  .maint-box { margin: 0 22px 16px; padding: 12px 14px; background: #f0f7f6; border-left: 3px solid var(--teal-mid); border-radius: 6px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .maint-item .m-lbl { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: var(--gray); }
+  .maint-item .m-val { font-family: 'Raleway', sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--dark); }
+  .maint-item .m-note { font-size: 0.65rem; color: var(--gray); margin-top: 1px; }
+
+  /* SCORES */
+  .p-scores { padding: 14px 22px 18px; border-top: 1px solid var(--gray-light); }
+  .scores-lbl { font-size: 0.62rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--gray); margin-bottom: 10px; }
+  .score-row { display: flex; align-items: center; gap: 8px; margin-bottom: 7px; }
+  .score-name { font-size: 0.68rem; color: var(--dark); width: 110px; flex-shrink: 0; }
+  .score-bg { flex: 1; height: 5px; background: var(--gray-light); border-radius: 3px; overflow: hidden; }
+  .score-fill { height: 100%; border-radius: 3px; background: linear-gradient(to right, var(--teal-mid), var(--teal-bright)); transition: width 1.2s cubic-bezier(.4,0,.2,1); }
   .score-num { font-size: 0.68rem; font-weight: 700; color: var(--teal-deep); width: 24px; text-align: right; }
 
-  /*  RENT ESTIMATE  */
-  .rent-box {
-    margin: 0 22px 18px;
-    padding: 12px 14px;
-    background: var(--gold-light);
-    border-left: 3px solid var(--gold);
-    border-radius: 6px;
-  }
-  .rent-box .rent-lbl {
-    font-size: 0.62rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #8a6b1a;
-    margin-bottom: 4px;
-  }
-  .rent-box .rent-val {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--dark);
-  }
-  .rent-box .rent-note { font-size: 0.68rem; color: var(--gray); margin-top: 2px; }
-
-  /*  CHARTS  */
-  .charts-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding-bottom: 8px;
-  }
+  /* CHARTS */
+  .charts-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding-bottom: 8px; }
   @media(max-width:680px){ .charts-row{grid-template-columns:1fr;} }
-
-  .chart-box {
-    background: #fff;
-    border-radius: var(--radius);
-    padding: 24px;
-    box-shadow: var(--shadow);
-  }
-  .chart-box h4 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: var(--teal-deep);
-    margin-bottom: 20px;
-  }
-  .bar-chart {
-    display: flex;
-    align-items: flex-end;
-    gap: 16px;
-    height: 140px;
-    padding-bottom: 2px;
-  }
-  .bar-group {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    height: 100%;
-    justify-content: flex-end;
-  }
-  .bar {
-    width: 100%;
-    border-radius: 6px 6px 0 0;
-    position: relative;
-    animation: barUp .9s ease forwards;
-  }
+  .chart-box { background: #fff; border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); }
+  .chart-box h4 { font-family: 'Raleway', sans-serif; font-size: 0.85rem; font-weight: 700; color: var(--teal-deep); margin-bottom: 20px; }
+  .bar-chart { display: flex; align-items: flex-end; gap: 28px; height: 140px; }
+  .bar-group { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 8px; height: 100%; justify-content: flex-end; }
+  .bar { width: 100%; border-radius: 6px 6px 0 0; position: relative; animation: barUp .9s ease forwards; }
   .bar-v { position: absolute; top:-20px; left:50%; transform:translateX(-50%); font-size:0.62rem; font-weight:700; color:var(--teal-deep); white-space:nowrap; }
-  .bar-lbl { font-size:0.65rem; color:var(--gray); text-align:center; font-weight:500; line-height:1.3; }
+  .bar-lbl { font-size:0.7rem; color:var(--gray); text-align:center; font-weight:600; line-height:1.3; }
   @keyframes barUp { from{transform:scaleY(0);transform-origin:bottom} to{transform:scaleY(1);transform-origin:bottom} }
 
-  /*  COMPARE TABLE  */
-  /* ── TABLE SCROLL (mobile) ── */
-  .table-scroll-hint {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    padding: 9px 16px;
-    background: var(--teal-light);
-    border-radius: 8px;
-    border-left: 3px solid var(--teal-bright);
-  }
-  .table-scroll-hint span {
-    font-size: 0.72rem;
-    font-weight: 600;
-    color: var(--teal-deep);
-    letter-spacing: 0.5px;
-  }
-  @media (max-width: 768px) {
-    .table-scroll-hint { display: flex; }
-  }
-  .table-scroll-container {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
+  /* TABLE */
+  .table-scroll-hint { display: none; align-items: center; justify-content: center; margin-bottom: 10px; padding: 9px 16px; background: var(--teal-light); border-radius: 8px; border-left: 3px solid var(--teal-bright); }
+  .table-scroll-hint span { font-size: 0.72rem; font-weight: 600; color: var(--teal-deep); letter-spacing: 0.5px; }
+  @media(max-width:768px){ .table-scroll-hint{display:flex;} }
+  .table-scroll-container { overflow-x: auto; -webkit-overflow-scrolling: touch; }
   .table-scroll-container::-webkit-scrollbar { height: 4px; }
   .table-scroll-container::-webkit-scrollbar-track { background: var(--gray-light); }
   .table-scroll-container::-webkit-scrollbar-thumb { background: var(--teal-bright); border-radius: 2px; }
-  .sticky-col {
-    position: sticky;
-    left: 0;
-    z-index: 2;
-    background: #fff;
-    white-space: nowrap;
-  }
-  .compare-table thead th.sticky-col {
-    background: var(--teal-deep);
-    z-index: 3;
-  }
+  .sticky-col { position: sticky; left: 0; z-index: 2; background: #fff; white-space: nowrap; }
+  .compare-table thead th.sticky-col { background: var(--teal-deep); z-index: 3; }
   .compare-table tbody tr:hover td.sticky-col { background: var(--off-white); }
-  @media (max-width: 768px) {
-    .compare-table th, .compare-table td { min-width: 150px; }
-    .sticky-col { min-width: 130px !important; }
-  }
+  @media(max-width:768px){ .compare-table th,.compare-table td{min-width:160px;} .sticky-col{min-width:130px!important;} }
 
-  .table-wrap {
-    background: #fff;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    overflow: hidden;
-    margin-bottom: 8px;
-  }
+  .table-wrap { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; margin-bottom: 8px; }
   .compare-table { width:100%; border-collapse:collapse; }
   .compare-table thead tr { background: var(--teal-deep); }
-  .compare-table thead th {
-    padding: 14px 18px;
-    text-align: left;
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.3px;
-  }
+  .compare-table thead th { padding: 14px 18px; text-align: left; color: #fff; font-family: 'Raleway', sans-serif; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.3px; }
   .compare-table thead th:first-child { color:rgba(255,255,255,0.55); font-size:0.65rem; letter-spacing:1px; text-transform:uppercase; font-family:'Montserrat',sans-serif; font-weight:600; }
   .compare-table tbody tr { border-bottom:1px solid var(--gray-light); transition:background .15s; }
   .compare-table tbody tr:hover { background:var(--off-white); }
@@ -467,246 +169,87 @@
   .yes { color:var(--teal-bright); font-weight:700; }
   .no  { color:#c97070; }
 
-  /*  TABS  */
-  .tabs-nav {
-    display: flex;
-    gap: 4px;
-    background: var(--gray-light);
-    padding: 4px;
-    border-radius: 8px;
-    width: fit-content;
-    margin-bottom: 20px;
-  }
-  .tab-btn {
-    padding: 7px 18px;
-    border: none;
-    background: transparent;
-    border-radius: 6px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: var(--gray);
-    cursor: pointer;
-    transition: all .2s;
-    letter-spacing: 0.2px;
-  }
+  /* TABS */
+  .tabs-nav { display:flex; gap:4px; background:var(--gray-light); padding:4px; border-radius:8px; width:fit-content; margin-bottom:20px; flex-wrap:wrap; }
+  .tab-btn { padding:7px 18px; border:none; background:transparent; border-radius:6px; font-family:'Montserrat',sans-serif; font-size:0.75rem; font-weight:600; color:var(--gray); cursor:pointer; transition:all .2s; }
   .tab-btn.active { background:#fff; color:var(--teal-deep); box-shadow:0 1px 6px rgba(0,0,0,.08); }
   .tab-pane { display:none; }
   .tab-pane.active { display:block; }
-
   .analysis-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
   @media(max-width:680px){ .analysis-grid{grid-template-columns:1fr;} }
-
-  .a-box {
-    background:#fff;
-    border-radius:var(--radius);
-    padding:22px;
-    box-shadow:var(--shadow);
-  }
-  .a-box h4 {
-    font-family:'Raleway',sans-serif;
-    font-size:0.88rem;
-    font-weight:700;
-    color:var(--teal-deep);
-    margin-bottom:12px;
-    padding-bottom:10px;
-    border-bottom:2px solid var(--teal-light);
-  }
+  .a-box { background:#fff; border-radius:var(--radius); padding:22px; box-shadow:var(--shadow); }
+  .a-box h4 { font-family:'Raleway',sans-serif; font-size:0.88rem; font-weight:700; color:var(--teal-deep); margin-bottom:12px; padding-bottom:10px; border-bottom:2px solid var(--teal-light); }
   .a-box ul { list-style:none; display:flex; flex-direction:column; gap:7px; }
-  .a-box ul li {
-    font-size:0.76rem;
-    color:var(--gray);
-    padding-left:16px;
-    position:relative;
-    line-height:1.5;
-  }
+  .a-box ul li { font-size:0.76rem; color:var(--gray); padding-left:16px; position:relative; line-height:1.5; }
   .a-box ul li::before { content:'→'; position:absolute; left:0; color:var(--teal-bright); font-weight:700; }
-  .a-box ul li.pro::before { content:''; color:#2aaa99; }
-  .a-box ul li.con::before { content:''; color:#c97070; }
+  .a-box ul li.pro::before { content:'✓'; color:#2aaa99; }
+  .a-box ul li.con::before { content:'✗'; color:#c97070; }
   .a-box ul li strong { color:var(--dark); }
 
-  /*  VERDICTS  */
-  .verdicts-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
-  @media(max-width:860px){ .verdicts-grid{grid-template-columns:1fr;} }
-
-  .v-card {
-    background:#fff;
-    border-radius:var(--radius);
-    padding:24px;
-    box-shadow:var(--shadow);
-    border-top:3px solid var(--teal-bright);
-  }
+  /* VERDICTS */
+  .verdicts-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; }
+  @media(max-width:680px){ .verdicts-grid{grid-template-columns:1fr;} }
+  .v-card { background:#fff; border-radius:var(--radius); padding:24px; box-shadow:var(--shadow); border-top:3px solid var(--teal-bright); }
   .v-card.v-gold { border-top-color:var(--gold); }
-  .v-card.v-dark { border-top-color:var(--teal-deep); }
   .v-icon { font-size:1.6rem; margin-bottom:10px; }
   .v-prop { font-size:0.62rem; font-weight:700; letter-spacing:1.2px; text-transform:uppercase; color:var(--teal-bright); margin-bottom:5px; }
   .v-card.v-gold .v-prop { color:var(--gold); }
   .v-title { font-family:'Raleway',sans-serif; font-size:0.95rem; font-weight:700; color:var(--dark); margin-bottom:8px; }
   .v-text { font-size:0.76rem; color:var(--gray); line-height:1.6; }
 
-  /*  FOOTER  */
-  .footer {
-    background: var(--dark);
-    margin-top: 44px;
-    padding: 36px 48px 24px;
-  }
-  .footer-inner {
-    max-width: 1080px;
-    margin: 0 auto;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 32px;
-    flex-wrap: wrap;
-  }
-  .footer-brand img {
-    height: 88px;
-    width: auto;
-    display: block;
-    margin-bottom: 12px;
-    filter: brightness(0) invert(1);
-    opacity: 0.9;
-  }
-  .footer-brand p {
-    font-size: 0.74rem;
-    color: rgba(255,255,255,.5);
-    line-height: 1.7;
-  }
+  /* DISTANCE VISUAL */
+  .distance-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:8px; }
+  @media(max-width:680px){ .distance-grid{grid-template-columns:1fr;} }
+  .dist-card { background:#fff; border-radius:var(--radius); padding:20px; box-shadow:var(--shadow); }
+  .dist-card h4 { font-family:'Raleway',sans-serif; font-size:0.85rem; font-weight:700; color:var(--teal-deep); margin-bottom:14px; padding-bottom:8px; border-bottom:2px solid var(--teal-light); }
+  .dist-row { display:flex; align-items:center; gap:10px; margin-bottom:10px; }
+  .dist-icon { font-size:1rem; width:24px; text-align:center; flex-shrink:0; }
+  .dist-info { flex:1; }
+  .dist-place { font-size:0.75rem; font-weight:600; color:var(--dark); }
+  .dist-time { font-size:0.68rem; color:var(--gray); }
+  .dist-bar-bg { flex:1; height:5px; background:var(--gray-light); border-radius:3px; overflow:hidden; }
+  .dist-bar-fill { height:100%; border-radius:3px; }
+  .dist-bar-fill.close { background:var(--teal-bright); }
+  .dist-bar-fill.mid { background:var(--gold); }
+  .dist-bar-fill.far { background:#c97070; }
+
+  /* FOOTER */
+  .footer { background: var(--dark); margin-top: 44px; padding: 36px 48px 24px; }
+  .footer-inner { max-width: 1080px; margin: 0 auto; display: flex; align-items: flex-start; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+  .footer-brand img { width: 133px; height: auto; display: block; margin-bottom: 12px; filter: brightness(0) invert(1); opacity: 0.85; }
+  .footer-brand p { font-size: 0.74rem; color: rgba(255,255,255,.5); line-height: 1.7; }
   .footer-agent { text-align:right; }
-  .agent-name {
-    font-family:'Raleway',sans-serif;
-    font-size:1rem;
-    font-weight:700;
-    color:#fff;
-    letter-spacing:-0.2px;
-  }
-  .agent-role {
-    font-size:0.68rem;
-    font-weight:600;
-    letter-spacing:1px;
-    text-transform:uppercase;
-    color:var(--teal-bright);
-    margin-bottom:10px;
-  }
+  .agent-name { font-family:'Raleway',sans-serif; font-size:1rem; font-weight:700; color:#fff; letter-spacing:-0.2px; }
+  .agent-role { font-size:0.68rem; font-weight:600; letter-spacing:1px; text-transform:uppercase; color:var(--teal-bright); margin-bottom:10px; }
   .agent-contact { font-size:0.74rem; color:rgba(255,255,255,.5); line-height:1.9; }
   .agent-contact a { color:rgba(255,255,255,.5); text-decoration:none; }
   .footer-hr { border:none; border-top:1px solid rgba(255,255,255,.08); margin:22px 0 14px; }
-  .footer-bottom {
-    max-width:1080px; margin:0 auto;
-    font-size:0.66rem; color:rgba(255,255,255,.25);
-    display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px;
-  }
+  .footer-bottom { max-width:1080px; margin:0 auto; font-size:0.66rem; color:rgba(255,255,255,.25); display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px; }
 
-  /*  REVEAL  */
+  /* CONFIDENTIAL OVERLAY */
+  #conf-overlay { display:none; position:fixed; inset:0; z-index:9999; background:linear-gradient(160deg,#0d2420 0%,var(--teal-deep) 100%); flex-direction:column; align-items:center; justify-content:center; padding:24px 28px; text-align:center; gap:6px; }
+  #conf-overlay .mo-logo { margin-bottom:6px; }
+  #conf-overlay .mo-logo img { width: 240px; height: auto; max-width: 70vw; filter:brightness(0) invert(1); opacity:0.95; }
+  #conf-overlay .mo-icon { display:none; }
+  #conf-overlay .mo-tag { font-size:0.62rem; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; color:var(--teal-bright); margin-bottom:6px; border:1px solid rgba(42,170,153,0.4); padding:5px 14px; border-radius:20px; display:inline-block; }
+  #conf-overlay h2 { font-family:'Raleway',sans-serif; font-size:1.1rem; font-weight:700; color:#fff; line-height:1.4; margin-bottom:6px; }
+  #conf-overlay .mo-divider { width:40px; height:2px; background:var(--teal-bright); border-radius:2px; margin:0 auto 8px; }
+  #conf-overlay .mo-rules { list-style:none; max-width:340px; margin:0 auto 10px; display:flex; flex-direction:column; gap:5px; }
+  #conf-overlay .mo-rules li { font-size:0.76rem; color:rgba(255,255,255,0.65); display:flex; align-items:flex-start; gap:8px; text-align:left; line-height:1.5; }
+  #conf-overlay .mo-rules li::before { content:'—'; color:var(--teal-bright); font-weight:700; flex-shrink:0; margin-top:1px; }
+  #conf-overlay .mo-confirm { font-size:0.72rem; color:rgba(255,255,255,0.4); max-width:300px; margin:0 auto 12px; font-style:italic; line-height:1.6; }
+  .mo-btn { background:var(--teal-bright); color:#fff; border:none; padding:14px 36px; border-radius:50px; font-family:'Montserrat',sans-serif; font-size:0.82rem; font-weight:700; letter-spacing:0.5px; cursor:pointer; transition:background .2s, transform .15s; display:inline-block; }
+  .mo-btn:hover { background:#23988a; transform:translateY(-2px); }
+
+  /* REVEAL */
   .reveal { opacity:0; transform:translateY(20px); transition:opacity .6s ease, transform .6s ease; }
   .reveal.visible { opacity:1; transform:none; }
-
-  /*  CONFIDENTIAL OVERLAY  */
-  #mobile-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    z-index: 9999;
-    background: linear-gradient(160deg, #0d2420 0%, var(--teal-deep) 100%);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 36px 28px;
-    text-align: center;
-  }
-  #mobile-overlay .mo-logo {
-    margin-bottom: 28px;
-  }
-  #mobile-overlay .mo-logo img {
-    height: 80px;
-    width: auto;
-    filter: brightness(0) invert(1);
-    opacity: 0.95;
-  }
-  #mobile-overlay .mo-icon {
-    font-size: 2.4rem;
-    margin-bottom: 14px;
-  }
-  #mobile-overlay .mo-tag {
-    font-size: 0.62rem;
-    font-weight: 700;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-    color: var(--teal-bright);
-    margin-bottom: 14px;
-    border: 1px solid rgba(42,170,153,0.4);
-    padding: 5px 14px;
-    border-radius: 20px;
-    display: inline-block;
-  }
-  #mobile-overlay h2 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #fff;
-    line-height: 1.4;
-    margin-bottom: 16px;
-  }
-  #mobile-overlay .mo-divider {
-    width: 40px;
-    height: 2px;
-    background: var(--teal-bright);
-    border-radius: 2px;
-    margin: 0 auto 20px;
-  }
-  #mobile-overlay .mo-rules {
-    list-style: none;
-    max-width: 340px;
-    margin: 0 auto 28px;
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
-  }
-  #mobile-overlay .mo-rules li {
-    font-size: 0.76rem;
-    color: rgba(255,255,255,0.65);
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-    text-align: left;
-    line-height: 1.5;
-  }
-  #mobile-overlay .mo-rules li::before {
-    content: '—';
-    color: var(--teal-bright);
-    font-weight: 700;
-    flex-shrink: 0;
-    margin-top: 1px;
-  }
-  #mobile-overlay .mo-confirm {
-    font-size: 0.72rem;
-    color: rgba(255,255,255,0.4);
-    max-width: 300px;
-    margin: 0 auto 28px;
-    font-style: italic;
-    line-height: 1.6;
-  }
-  .mo-btn {
-    background: var(--teal-bright);
-    color: #fff;
-    border: none;
-    padding: 14px 36px;
-    border-radius: 50px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.82rem;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    cursor: pointer;
-    transition: background .2s, transform .15s;
-    display: inline-block;
-  }
-  .mo-btn:hover { background: #23988a; transform: translateY(-2px); }
 </style>
 </head>
 <body>
 
 <!-- CONFIDENTIAL OVERLAY -->
-<div id="mobile-overlay">
+<div id="conf-overlay">
   <div class="mo-logo">
     <img src="logoblancotres.png" alt="TRES65 Inmobiliaria"
          onerror="this.outerHTML='<span style=\'font-family:Raleway,sans-serif;font-size:1.6rem;font-weight:800;color:#2aaa99\'>TRES65</span>'">
@@ -722,236 +265,302 @@
     <li>TRES65 Inmobiliaria se reserva todos los derechos sobre el contenido y análisis aquí presentados.</li>
   </ul>
   <p class="mo-confirm">Al continuar confirmas que eres el destinatario autorizado de este análisis.</p>
-  <button class="mo-btn" onclick="closeMobileOverlay()">Acepto y accedo al reporte →</button>
+  <button class="mo-btn" onclick="closeOverlay()">Acepto y accedo al reporte →</button>
 </div>
 
-<!-- HEADER: logo on white -->
+<!-- HEADER -->
 <header class="header">
   <div class="header-logo">
     <img src="LOGO_INMOBILIARIA.png" alt="TRES65 Inmobiliaria"
          onerror="this.outerHTML='<span style=\'font-family:Raleway,sans-serif;font-size:1.6rem;font-weight:800;color:#1a5c5a\'>TRES<span style=\'color:#2aaa99\'>65</span></span>'">
   </div>
   <div class="header-meta">
-    <h1>Análisis Comparativo de Propiedades</h1>
+    <h1>Una inversión pensada para su familia, con visión de futuro</h1>
     <span class="header-accent"></span>
-    <p class="tagline">Centro Histórico de Mérida · Junio 2026 · Uso Confidencial</p>
+    <p class="tagline">Mérida, Yucatán · Junio 2026 · Preparado especialmente para usted</p>
   </div>
 </header>
 
-<!-- MARKET CONTEXT BANNER -->
+<!-- MARKET BANNER -->
 <div class="market-banner">
   <div class="market-banner-inner">
     <div class="market-stat">
-      <div class="val">$25K–$45K</div>
-      <div class="lbl">MXN/m² zona centro</div>
+      <div class="val">$3.99M</div>
+      <div class="lbl">Precio especial en ambas</div>
     </div>
     <div class="market-divider"></div>
     <div class="market-stat">
-      <div class="val">65–75%</div>
-      <div class="lbl">Ocupación Airbnb</div>
+      <div class="val">~12 min</div>
+      <div class="lbl">A la UVM desde M10</div>
     </div>
     <div class="market-divider"></div>
     <div class="market-stat">
-      <div class="val">$3.5K–$8K</div>
-      <div class="lbl">MXN/noche promedio</div>
+      <div class="val">~8 min</div>
+      <div class="lbl">A la UVM desde Altea</div>
     </div>
     <div class="market-divider"></div>
     <div class="market-stat">
-      <div class="val">↑ Alta</div>
-      <div class="lbl">Plusvalía 2024–2026</div>
+      <div class="val">↑ Norte</div>
+      <div class="lbl">La zona que más crece</div>
     </div>
   </div>
 </div>
 
-<!-- PROPERTY CARDS -->
 <div class="wrap">
+
+  <!-- CLIENT PROFILE -->
   <div class="section-head reveal">
-    <h2>Las tres finalistas</h2>
-    <p>Precios reflejan valor negociado real — no precio de lista.</p>
+    <h2>Lo que encontramos para su familia</h2>
+    <p>Dos opciones seleccionadas a la medida de sus necesidades y su visión de inversión</p>
+  </div>
+  <div class="profile-banner reveal">
+    <div class="profile-item">
+      <div class="p-lbl">Comprador</div>
+      <div class="p-val">Inversionista con visión global, experiencia en mercados internacionales y capital listo para trabajar en Mérida</div>
+    </div>
+    <div class="profile-item">
+      <div class="p-lbl">Uso inmediato</div>
+      <div class="p-val">Dos hijastros en <span>UVM Mérida</span> · Vivienda durante carrera universitaria</div>
+    </div>
+    <div class="profile-item">
+      <div class="p-lbl">Uso futuro</div>
+      <div class="p-val">Renta o venta al terminar universidad · Presupuesto <span>hasta $4.3M</span> con gastos notariales</div>
+    </div>
+  </div>
+
+  <!-- PROPERTY CARDS -->
+  <div class="section-head reveal">
+    <h2>Dos departamentos, una gran decisión</h2>
+    <p>Ambos al mismo precio — pero con personalidades muy diferentes. Aquí le explicamos por qué eso importa.</p>
   </div>
 
   <div class="cards-grid">
 
-    <!-- CASA OLIVER -->
-    <div class="p-card reveal">
-      <div class="p-badge badge-gold">◆ Segunda opción</div>
-      <div class="p-card-head">
-        <div class="p-card-id">EB-VV4690</div>
-        <div class="p-card-name">Casa Oliver</div>
-        <div class="p-card-zone">Barrio de San Sebastián, Centro</div>
-      </div>
-      <div class="p-price-row">
-        <span class="p-price-ask">$8,665,000</span>
-        <span class="p-price-real">~$8.0–8.3M</span>
-        <span class="p-price-cur">MXN negociado</span>
-        <span class="p-price-m2">$27K–28K/m²</span>
-      </div>
-      <div class="p-stats">
-        <div class="p-stat"><div class="p-stat-lbl">Recámaras</div><div class="p-stat-val">4 + área huésp.</div></div>
-        <div class="p-stat"><div class="p-stat-lbl">Baños</div><div class="p-stat-val">3</div></div>
-        <div class="p-stat"><div class="p-stat-lbl">Construcción</div><div class="p-stat-val">300 m²</div></div>
-        <div class="p-stat"><div class="p-stat-lbl">Terreno</div><div class="p-stat-val">354 m²</div></div>
-        <div class="p-stat"><div class="p-stat-lbl">Enganche</div><div class="p-stat-val">10%</div></div>
-        <div class="p-stat"><div class="p-stat-lbl">Estado</div><div class="p-stat-val">Amueblada ✓</div></div>
-      </div>
-      <div class="p-desc">La más espaciosa de las tres con 300 m² construidos y primera crujía colonial auténtica. El área de huéspedes de 2 niveles <strong>no tiene entrada independiente</strong> — el acceso es por la sala principal, lo que limita la privacidad para visitas simultáneas y descarta la renta autónoma.</div>
-      <div class="p-tags">
-        <span class="p-tag">◈ 6 paneles solares</span>
-        <span class="p-tag">◉ Alberca nueva</span>
-        <span class="p-tag">✦ Todo incluido</span>
-        <span class="p-tag">◈ Mayor construcción</span>
-        <span class="p-tag">◈ Cisterna + pozo</span>
-        <span class="p-tag">◦ Pet friendly</span>
-      </div>
-      <div class="p-scores">
-        <div class="scores-lbl">Evaluación estratégica</div>
-        <div class="score-row"><span class="score-name">Uso familiar</span><div class="score-bg"><div class="score-fill" style="width:78%"></div></div><span class="score-num">7.8</span></div>
-        <div class="score-row"><span class="score-name">Valor/m²</span><div class="score-bg"><div class="score-fill" style="width:92%"></div></div><span class="score-num">9.2</span></div>
-        <div class="score-row"><span class="score-name">Calidad de vida</span><div class="score-bg"><div class="score-fill" style="width:83%"></div></div><span class="score-num">8.3</span></div>
-        <div class="score-row"><span class="score-name">Plusvalía zona</span><div class="score-bg"><div class="score-fill" style="width:90%"></div></div><span class="score-num">9.0</span></div>
-      </div>
-    </div>
-
-    <!-- CASA HERMANA -->
+    <!-- M10 MONTEBELLO -->
     <div class="p-card top-pick reveal">
       <div class="p-badge badge-top">★ Primera opción</div>
       <div class="p-card-head">
-        <div class="p-card-id">Calle 51 #474A</div>
-        <div class="p-card-name">Casa Hermana</div>
-        <div class="p-card-zone">Centro Histórico, Mérida</div>
+        <div class="p-card-id">EB-HO4879 · C8 Nivel 2</div>
+        <div class="p-card-name">M10 Montebello</div>
+        <div class="p-card-dev">Desarrollo Consur · Entrega inmediata</div>
+        <div class="p-card-zone">Montebello, norte de Mérida</div>
       </div>
       <div class="p-price-row">
-        <span class="p-price-ask">$12,500,000</span>
-        <span class="p-price-real">~$9.8M</span>
-        <span class="p-price-cur">MXN negociado</span>
-        <span class="p-price-m2">$43K/m²</span>
+        <span class="p-price-ask">$4,390,000</span>
+        <span class="p-price-real">$3,990,000</span>
+        <span class="p-price-cur">MXN con descuento</span>
+        <span class="p-price-m2">$44,843/m²</span>
       </div>
       <div class="p-stats">
-        <div class="p-stat"><div class="p-stat-lbl">Recámaras</div><div class="p-stat-val">3 + cuarto serv.</div></div>
-        <div class="p-stat"><div class="p-stat-lbl">Baños</div><div class="p-stat-val">4 + 1 medio</div></div>
-        <div class="p-stat"><div class="p-stat-lbl">Construcción</div><div class="p-stat-val">223 m²</div></div>
-        <div class="p-stat"><div class="p-stat-lbl">Terreno</div><div class="p-stat-val">242 m²</div></div>
-        <div class="p-stat"><div class="p-stat-lbl">Niveles</div><div class="p-stat-val">3 pisos</div></div>
-        <div class="p-stat"><div class="p-stat-lbl">Estado</div><div class="p-stat-val">Amueblada ✓</div></div>
+        <div class="p-stat"><div class="p-stat-lbl">Recámaras</div><div class="p-stat-val">2</div></div>
+        <div class="p-stat"><div class="p-stat-lbl">Baños</div><div class="p-stat-val">2</div></div>
+        <div class="p-stat"><div class="p-stat-lbl">Interior</div><div class="p-stat-val">89 m²</div></div>
+        <div class="p-stat"><div class="p-stat-lbl">Total c/cajones</div><div class="p-stat-val">109 m²</div></div>
+        <div class="p-stat"><div class="p-stat-lbl">Estacionamiento</div><div class="p-stat-val">1 cajón</div></div>
+        <div class="p-stat"><div class="p-stat-lbl">Estado</div><div class="p-stat-val">Amueblado ✓</div></div>
       </div>
-      <div class="p-desc">La mejor opción para uso familiar puro. Sus 4.5 baños resuelven la dinámica de 3 hijas con parejas — nadie comparte baño con nadie. Ubicación en Calle 51, corazón del Centro Histórico. 3 niveles con terraza y potencial de roof garden. Requiere due diligence por 60 años de antigüedad.</div>
+      <div class="p-desc">Sus hijos llegan y ya está listo — el departamento muestra incluye muebles y equipamiento desde el primer día. Ubicado sobre la Avenida 10 de Montebello, el corredor más vibrante y joven del norte de Mérida. Roof garden, workspace con wifi de alta velocidad y sala de juntas: todo lo que dos universitarios necesitan para estudiar, convivir y disfrutar su etapa.</div>
+      <div class="p-tags">
+        <span class="p-tag gold">★ Amueblado completo</span>
+        <span class="p-tag">◈ Roof garden</span>
+        <span class="p-tag">◈ Workspace + wifi</span>
+        <span class="p-tag">◈ Sala de juntas</span>
+        <span class="p-tag">◦ Seguridad 24h</span>
+        <span class="p-tag">◦ Fraccionamiento privado</span>
+      </div>
+      <div class="maint-box">
+        <div class="maint-item">
+          <div class="m-lbl">Mantenimiento mensual</div>
+          <div class="m-val">$4,033 MXN</div>
+          <div class="m-note">$37/m² aprox.</div>
+        </div>
+        <div class="maint-item">
+          <div class="m-lbl">Fondo de reserva</div>
+          <div class="m-val">$5,000 MXN</div>
+          <div class="m-note">Pago único de apartado</div>
+        </div>
+      </div>
+      <div class="p-scores">
+        <div class="scores-lbl">Puntuación por categoría</div>
+        <div class="score-row"><span class="score-name">Vida universitaria</span><div class="score-bg"><div class="score-fill" style="width:97%"></div></div><span class="score-num">9.7</span></div>
+        <div class="score-row"><span class="score-name">Zona y plusvalía</span><div class="score-bg"><div class="score-fill" style="width:88%"></div></div><span class="score-num">8.8</span></div>
+        <div class="score-row"><span class="score-name">Potencial de renta</span><div class="score-bg"><div class="score-fill" style="width:92%"></div></div><span class="score-num">9.2</span></div>
+        <div class="score-row"><span class="score-name">Valor post-universidad</span><div class="score-bg"><div class="score-fill" style="width:88%"></div></div><span class="score-num">8.8</span></div>
+      </div>
+    </div>
+
+    <!-- ALTEA ALTABRISA -->
+    <div class="p-card reveal">
+      <div class="p-badge badge-alt">◆ Segunda opción</div>
+      <div class="p-card-head">
+        <div class="p-card-id">EB-KY9263 · Nivel 2 Modelo B</div>
+        <div class="p-card-name">Altea Altabrisa</div>
+        <div class="p-card-dev">Complejo de lujo · 26 departamentos · Preventa</div>
+        <div class="p-card-zone">Altabrisa, norte de Mérida</div>
+      </div>
+      <div class="p-price-row">
+        <span class="p-price-ask">$4,400,000</span>
+        <span class="p-price-real">$3,990,000</span>
+        <span class="p-price-cur">MXN con descuento</span>
+        <span class="p-price-m2">$43,464/m²</span>
+      </div>
+      <div class="p-stats">
+        <div class="p-stat"><div class="p-stat-lbl">Recámaras</div><div class="p-stat-val">2</div></div>
+        <div class="p-stat"><div class="p-stat-lbl">Baños</div><div class="p-stat-val">2</div></div>
+        <div class="p-stat"><div class="p-stat-lbl">Interior</div><div class="p-stat-val">91.8 m²</div></div>
+        <div class="p-stat"><div class="p-stat-lbl">Estacionamiento</div><div class="p-stat-val">2 cajones</div></div>
+        <div class="p-stat"><div class="p-stat-lbl">Bodega</div><div class="p-stat-val">Incluida</div></div>
+        <div class="p-stat"><div class="p-stat-lbl">Estado</div><div class="p-stat-val">Sin muebles</div></div>
+      </div>
+      <div class="p-desc">Altea es un complejo boutique de solo 26 departamentos en el corazón de Altabrisa — la zona más exclusiva y de mayor plusvalía del norte de Mérida. Alberca, gimnasio, bar con terraza y área de asadores crean un estilo de vida que sus hijos disfrutarán cada día. Con enganche del 10%, es la opción que cuida mejor su flujo de capital desde el inicio.</div>
       <div class="p-tags">
         <span class="p-tag">◉ Alberca</span>
-        <span class="p-tag">◆ 4.5 baños</span>
-        <span class="p-tag">◈ 3 niveles + terraza</span>
-        <span class="p-tag">◦ Cuarto servicio</span>
-        <span class="p-tag">✦ Todo incluido</span>
-        <span class="p-tag">◦ Pet friendly</span>
+        <span class="p-tag">◈ Gimnasio</span>
+        <span class="p-tag">◈ Bar / Terraza</span>
+        <span class="p-tag">◈ 2 estacionamientos</span>
+        <span class="p-tag">◦ Elevador</span>
+        <span class="p-tag">◦ Seguridad CCTV</span>
       </div>
-      <div class="rent-box">
-        <div class="rent-lbl">§ Renta estimada mensual</div>
-        <div class="rent-val">$81K – $130K MXN</div>
-        <div class="rent-note">$4,500–$6,500/noche · 18–20 noches/mes · Calle 51 Centro — dirección de mayor caché de las tres</div>
+      <div class="maint-box">
+        <div class="maint-item">
+          <div class="m-lbl">Mantenimiento mensual</div>
+          <div class="m-val">$4,050 MXN</div>
+          <div class="m-note">Cuota mensual fija y predecible</div>
+        </div>
+        <div class="maint-item">
+          <div class="m-lbl">Fondo de reserva</div>
+          <div class="m-val">$6,000 MXN</div>
+          <div class="m-note">Se paga junto con el mantenimiento</div>
+        </div>
       </div>
       <div class="p-scores">
-        <div class="scores-lbl">Evaluación estratégica</div>
-        <div class="score-row"><span class="score-name">Uso familiar</span><div class="score-bg"><div class="score-fill" style="width:95%"></div></div><span class="score-num">9.5</span></div>
-        <div class="score-row"><span class="score-name">Valor/m²</span><div class="score-bg"><div class="score-fill" style="width:65%"></div></div><span class="score-num">6.5</span></div>
-        <div class="score-row"><span class="score-name">Calidad de vida</span><div class="score-bg"><div class="score-fill" style="width:93%"></div></div><span class="score-num">9.3</span></div>
-        <div class="score-row"><span class="score-name">Plusvalía zona</span><div class="score-bg"><div class="score-fill" style="width:90%"></div></div><span class="score-num">9.0</span></div>
+        <div class="scores-lbl">Puntuación por categoría</div>
+        <div class="score-row"><span class="score-name">Vida universitaria</span><div class="score-bg"><div class="score-fill" style="width:72%"></div></div><span class="score-num">7.2</span></div>
+        <div class="score-row"><span class="score-name">Zona y plusvalía</span><div class="score-bg"><div class="score-fill" style="width:97%"></div></div><span class="score-num">9.7</span></div>
+        <div class="score-row"><span class="score-name">Potencial de renta</span><div class="score-bg"><div class="score-fill" style="width:88%"></div></div><span class="score-num">8.8</span></div>
+        <div class="score-row"><span class="score-name">Valor post-universidad</span><div class="score-bg"><div class="score-fill" style="width:95%"></div></div><span class="score-num">9.5</span></div>
       </div>
     </div>
 
-    <!-- CASA SUSPIRO -->
-    <div class="p-card reveal">
-      <div class="p-badge badge-value">› Mejor entrada</div>
-      <div class="p-card-head">
-        <div class="p-card-id">EB-WD4928</div>
-        <div class="p-card-name">Casa Suspiro</div>
-        <div class="p-card-zone">Barrio de Santiago, Centro</div>
+  </div>
+
+  <!-- DISTANCE SECTION -->
+  <div class="section-head reveal">
+    <h2>Todo cerca de donde importa</h2>
+    <p>La universidad, el trabajo y la vida diaria de sus hijos — todo bien ubicado desde cualquiera de las dos opciones</p>
+  </div>
+  <div class="distance-grid reveal">
+    <div class="dist-card">
+      <h4>M10 Montebello — a minutos de todo</h4>
+      <div class="dist-row">
+        <div class="dist-icon">▲</div>
+        <div class="dist-info">
+          <div class="dist-place">UVM Mérida</div>
+          <div class="dist-time">~12 min en coche — ruta directa y sin complicaciones</div>
+        </div>
+        <div class="dist-bar-bg"><div class="dist-bar-fill close" style="width:65%"></div></div>
       </div>
-      <div class="p-price-row">
-        <span class="p-price-real">$6,500,000</span>
-        <span class="p-price-cur">MXN</span>
-        <span class="p-price-m2">$37K/m²</span>
+      <div class="dist-row">
+        <div class="dist-icon">◈</div>
+        <div class="dist-info">
+          <div class="dist-place">Plaza Las Américas / Galerías</div>
+          <div class="dist-time">~8 min — salir a comer, al cine o de compras nunca fue tan fácil</div>
+        </div>
+        <div class="dist-bar-bg"><div class="dist-bar-fill close" style="width:50%"></div></div>
       </div>
-      <div class="p-stats">
-        <div class="p-stat"><div class="p-stat-lbl">Recámaras</div><div class="p-stat-val">3</div></div>
-        <div class="p-stat"><div class="p-stat-lbl">Baños</div><div class="p-stat-val">3</div></div>
-        <div class="p-stat"><div class="p-stat-lbl">Construcción</div><div class="p-stat-val">175 m²</div></div>
-        <div class="p-stat"><div class="p-stat-lbl">Terreno</div><div class="p-stat-val">381 m² </div></div>
-        <div class="p-stat"><div class="p-stat-lbl">Enganche</div><div class="p-stat-val">20% / Crédito </div></div>
-        <div class="p-stat"><div class="p-stat-lbl">Estado</div><div class="p-stat-val">Amueblada </div></div>
+      <div class="dist-row">
+        <div class="dist-icon">◦</div>
+        <div class="dist-info">
+          <div class="dist-place">Paseo Montejo / Centro</div>
+          <div class="dist-time">~10 min — donde trabaja uno de sus hijos, a la vuelta de la esquina</div>
+        </div>
+        <div class="dist-bar-bg"><div class="dist-bar-fill mid" style="width:55%"></div></div>
       </div>
-      <div class="p-desc">El mayor terreno de las tres en Centro Histórico — activo escaso y subestimado. Materiales auténticos: madera Tzalam, Chukum, pisos de pasta.◈ Estacionamiento techado. La más hermosa estéticamente, pero con menor capacidad para familia grande simultánea.</div>
-      <div class="p-tags">
-        <span class="p-tag">◉ Alberca Chukum</span>
-        <span class="p-tag">◈ Estacionamiento</span>
-        <span class="p-tag">◦ Mayor terreno</span>
-        <span class="p-tag">✦ Todo incluido</span>
-        <span class="p-tag">◈ Domos luz natural</span>
-        <span class="p-tag">◦ Riego automático</span>
-      </div>
-      <div class="rent-box">
-        <div class="rent-lbl">§ Renta estimada mensual</div>
-        <div class="rent-val">$56K – $90K MXN</div>
-        <div class="rent-note">$2,800–$4,500/noche · Menor capacidad por tamaño · Mayor ahorro en mantenimiento</div>
-      </div>
-      <div class="p-scores">
-        <div class="scores-lbl">Evaluación estratégica</div>
-        <div class="score-row"><span class="score-name">Rentabilidad</span><div class="score-bg"><div class="score-fill" style="width:68%"></div></div><span class="score-num">6.8</span></div>
-        <div class="score-row"><span class="score-name">Valor/m²</span><div class="score-bg"><div class="score-fill" style="width:78%"></div></div><span class="score-num">7.8</span></div>
-        <div class="score-row"><span class="score-name">Calidad de vida</span><div class="score-bg"><div class="score-fill" style="width:88%"></div></div><span class="score-num">8.8</span></div>
-        <div class="score-row"><span class="score-name">Plusvalía zona</span><div class="score-bg"><div class="score-fill" style="width:83%"></div></div><span class="score-num">8.3</span></div>
+      <div class="dist-row">
+        <div class="dist-icon">◦</div>
+        <div class="dist-info">
+          <div class="dist-place">Periférico norte</div>
+          <div class="dist-time">~5 min — conectados con toda la ciudad sin estrés</div>
+        </div>
+        <div class="dist-bar-bg"><div class="dist-bar-fill close" style="width:35%"></div></div>
       </div>
     </div>
 
-  </div><!-- /cards-grid -->
+    <div class="dist-card">
+      <h4>Altea Altabrisa — en el corazón del norte</h4>
+      <div class="dist-row">
+        <div class="dist-icon">▲</div>
+        <div class="dist-info">
+          <div class="dist-place">UVM Mérida</div>
+          <div class="dist-time">~8 min en coche — la ruta más directa de las dos opciones</div>
+        </div>
+        <div class="dist-bar-bg"><div class="dist-bar-fill close" style="width:45%"></div></div>
+      </div>
+      <div class="dist-row">
+        <div class="dist-icon">◈</div>
+        <div class="dist-info">
+          <div class="dist-place">Plaza Altabrisa / Liverpool / Walmart</div>
+          <div class="dist-time">~3 min caminando — supermercado, bancos y tiendas sin necesidad de coche</div>
+        </div>
+        <div class="dist-bar-bg"><div class="dist-bar-fill close" style="width:20%"></div></div>
+      </div>
+      <div class="dist-row">
+        <div class="dist-icon">◦</div>
+        <div class="dist-info">
+          <div class="dist-place">Hospitales Star Médica / Médica Sur</div>
+          <div class="dist-time">~5 min — los mejores hospitales de Mérida a la vuelta, para su tranquilidad</div>
+        </div>
+        <div class="dist-bar-bg"><div class="dist-bar-fill close" style="width:30%"></div></div>
+      </div>
+      <div class="dist-row">
+        <div class="dist-icon">◦</div>
+        <div class="dist-info">
+          <div class="dist-place">Anáhuac / Tec de Monterrey</div>
+          <div class="dist-time">~10 min — flexibilidad total si sus planes académicos cambian</div>
+        </div>
+        <div class="dist-bar-bg"><div class="dist-bar-fill mid" style="width:50%"></div></div>
+      </div>
+    </div>
+  </div>
 
   <!-- CHARTS -->
   <div class="section-head reveal">
-    <h2>Comparativa de números clave</h2>
-    <p>Precios reales negociados · m² construidos · renta mensual estimada</p>
+    <h2>Los números que debe conocer</h2>
+    <p>Mismo precio hoy, diferente historia a futuro. Le mostramos exactamente qué esperar en cada escenario.</p>
   </div>
   <div class="charts-row reveal">
     <div class="chart-box">
-      <h4>Precio real negociado (millones MXN)</h4>
+      <h4>Lo que pagará cada mes (mantenimiento + reserva)</h4>
       <div class="bar-chart">
         <div class="bar-group">
-          <div class="bar" style="height:84%;background:linear-gradient(to top,#1a5c5a,#2aaa99);position:relative;">
-            <span class="bar-v">~$8.15M</span>
+          <div class="bar" style="height:67%;background:linear-gradient(to top,#1a5c5a,#2aaa99);position:relative;">
+            <span class="bar-v">$4,033</span>
           </div>
-          <span class="bar-lbl">Casa Oliver</span>
+          <span class="bar-lbl">M10 Montebello</span>
         </div>
         <div class="bar-group">
           <div class="bar" style="height:100%;background:linear-gradient(to top,#c9a84c,#f0d080);position:relative;">
-            <span class="bar-v">~$9.8M</span>
+            <span class="bar-v">$10,050*</span>
           </div>
-          <span class="bar-lbl">Casa Hermana</span>
-        </div>
-        <div class="bar-group">
-          <div class="bar" style="height:68%;background:linear-gradient(to top,#1e7a6e,#5cc4b8);position:relative;">
-            <span class="bar-v">$6.5M</span>
-          </div>
-          <span class="bar-lbl">Casa Suspiro</span>
+          <span class="bar-lbl">Altea Altabrisa</span>
         </div>
       </div>
+      <p style="font-size:0.65rem;color:var(--gray);margin-top:12px;">* Altea incluye $4,050 de mantenimiento más $6,000 de fondo de reserva mensual</p>
     </div>
     <div class="chart-box">
-      <h4>Potencial de renta mensual bruta (MXN)</h4>
+      <h4>Lo que puede ganar rentando cuando sus hijos terminen</h4>
       <div class="bar-chart">
         <div class="bar-group">
-          <div class="bar" style="height:100%;background:linear-gradient(to top,#1a5c5a,#2aaa99);position:relative;">
-            <span class="bar-v">$90–150K</span>
+          <div class="bar" style="height:82%;background:linear-gradient(to top,#1a5c5a,#2aaa99);position:relative;">
+            <span class="bar-v">$14–18K</span>
           </div>
-          <span class="bar-lbl">Casa Oliver</span>
+          <span class="bar-lbl">M10 Montebello</span>
         </div>
         <div class="bar-group">
-          <div class="bar" style="height:87%;background:linear-gradient(to top,#c9a84c,#f0d080);position:relative;">
-            <span class="bar-v">$81–130K</span>
+          <div class="bar" style="height:100%;background:linear-gradient(to top,#c9a84c,#f0d080);position:relative;">
+            <span class="bar-v">$18–25K</span>
           </div>
-          <span class="bar-lbl">Casa Hermana</span>
-        </div>
-        <div class="bar-group">
-          <div class="bar" style="height:60%;background:linear-gradient(to top,#1e7a6e,#5cc4b8);position:relative;">
-            <span class="bar-v">$56–90K</span>
-          </div>
-          <span class="bar-lbl">Casa Suspiro</span>
+          <span class="bar-lbl">Altea Altabrisa</span>
         </div>
       </div>
     </div>
@@ -959,131 +568,135 @@
 
   <!-- COMPARE TABLE -->
   <div class="section-head reveal">
-    <h2>Tabla comparativa completa</h2>
-    <p>Todos los factores decisivos sin filtros</p>
+    <h2>Hemos reunido todos los factores para que pueda comparar con claridad y tomar la mejor decisión para su familia</h2>
+    <p>Porque creemos que una buena decisión se toma con información completa y transparente</p>
   </div>
-
-  <!-- mobile scroll hint -->
-  <div class="table-scroll-hint" id="tableHint">
-    <span>‹ desliza para ver las tres propiedades ›</span>
-  </div>
-
+  <div class="table-scroll-hint"><span>‹ desliza para ver ambas propiedades ›</span></div>
   <div class="table-wrap reveal">
     <div class="table-scroll-container">
-    <table class="compare-table">
-      <thead>
-        <tr>
-          <th class="sticky-col">Criterio</th>
-          <th>Casa Oliver</th>
-          <th>Casa Hermana</th>
-          <th>Casa Suspiro</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td class="sticky-col">Precio negociado</td><td>~$8.0–8.3M MXN</td><td><span class="hl">~$9.8M MXN negociado</span></td><td>$6.5M MXN</td></tr>
-        <tr><td class="sticky-col">Precio/m² construido</td><td><span class="hl">$27–28K MXN</span></td><td>$43K MXN</td><td>$37K MXN</td></tr>
-        <tr><td class="sticky-col">Construcción</td><td><span class="hl">300 m²</span></td><td>223 m²</td><td>175 m²</td></tr>
-        <tr><td class="sticky-col">Terreno</td><td>354 m²</td><td>242 m²</td><td><span class="hl">381 m²</span></td></tr>
-        <tr><td class="sticky-col">Recámaras útiles</td><td>4 + área huéspedes</td><td><span class="hl">3 + cuarto servicio</span></td><td>3</td></tr>
-        <tr><td class="sticky-col">Baños</td><td>3</td><td><span class="hl">4 + medio</span></td><td>3</td></tr>
-        <tr><td class="sticky-col">Área huéspedes independiente</td><td><span class="no">No — acceso por sala principal</span></td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
-        <tr><td class="sticky-col">Amueblada / equipada</td><td><span class="yes">✓ Total</span></td><td><span class="yes">✓ Total</span></td><td><span class="yes">✓ Total</span></td></tr>
-        <tr><td class="sticky-col">Estacionamiento</td><td><span class="no">No</span></td><td><span class="no">No</span></td><td><span class="yes">✓ Techado</span></td></tr>
-        <tr><td class="sticky-col">Paneles solares</td><td><span class="yes">✓ 6 paneles</span></td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
-        <tr><td class="sticky-col">Potencial renta/mes</td><td>$70K–$110K MXN</td><td><span class="hl">$81K–$130K MXN</span></td><td>$56K–$90K MXN</td></tr>
-        <tr><td class="sticky-col">Presupuesto libre post-compra</td><td>~$1.7–2M MXN</td><td>~$400K MXN</td><td><span class="hl">~$3.5M MXN</span></td></tr>
-        <tr><td class="sticky-col">Acepta crédito bancario</td><td><span class="no">No especificado</span></td><td><span class="no">No especificado</span></td><td><span class="yes">✓ Sí</span></td></tr>
-        <tr><td class="sticky-col">Due diligence necesario</td><td>Estándar</td><td><span class="no">Crítico (60 años)</span></td><td>Estándar</td></tr>
-        <tr><td class="sticky-col">Lista para operar hoy</td><td><span class="yes">✓ Inmediata</span></td><td><span class="yes">✓ Inmediata</span></td><td><span class="yes">✓ Inmediata</span></td></tr>
-      </tbody>
-    </table>
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th class="sticky-col">Criterio</th>
+            <th>★ M10 Montebello</th>
+            <th>◆ Altea Altabrisa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="sticky-col">Precio con descuento</td><td><span class="hl">$3,990,000 MXN</span></td><td><span class="hl">$3,990,000 MXN</span></td></tr>
+          <tr><td class="sticky-col">Precio original</td><td>$4,390,000</td><td>$4,400,000</td></tr>
+          <tr><td class="sticky-col">Ahorro vs. precio regular</td><td><span class="hl">$400,000 MXN</span></td><td>$410,000 MXN</td></tr>
+          <tr><td class="sticky-col">Interior m²</td><td>89 m²</td><td><span class="hl">91.8 m²</span></td></tr>
+          <tr><td class="sticky-col">Total con cajones</td><td><span class="hl">109 m²</span></td><td>91.8 m²</td></tr>
+          <tr><td class="sticky-col">Recámaras / Baños</td><td>2 / 2</td><td>2 / 2</td></tr>
+          <tr><td class="sticky-col">Estacionamientos</td><td>1 cajón</td><td><span class="hl">2 cajones</span></td></tr>
+          <tr><td class="sticky-col">Amueblado</td><td><span class="yes">✓ Completo (depto muestra)</span></td><td><span class="no">No incluye muebles</span></td></tr>
+          <tr><td class="sticky-col">Mantenimiento mensual</td><td><span class="hl">$4,033 MXN</span></td><td>$4,050 MXN</td></tr>
+          <tr><td class="sticky-col">Fondo de reserva</td><td><span class="hl">$5,000 (único)</span></td><td><span class="no">$6,000 mensual</span></td></tr>
+          <tr><td class="sticky-col">Costo mensual total</td><td><span class="hl">~$4,033/mes</span></td><td><span class="no">~$10,050/mes</span></td></tr>
+          <tr><td class="sticky-col">Enganche</td><td>30%</td><td><span class="hl">10%</span></td></tr>
+          <tr><td class="sticky-col">Distancia a UVM</td><td>~12 min</td><td><span class="hl">~8 min</span></td></tr>
+          <tr><td class="sticky-col">Workspace / estudio</td><td><span class="yes">✓ Workspace + wifi + sala juntas</span></td><td><span class="no">No especificado</span></td></tr>
+          <tr><td class="sticky-col">Roof garden</td><td><span class="yes">✓</span></td><td><span class="no">Bar/terraza (diferente uso)</span></td></tr>
+          <tr><td class="sticky-col">Alberca</td><td><span class="no">No</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td class="sticky-col">Gimnasio</td><td><span class="no">No</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td class="sticky-col">Elevador</td><td><span class="no">No especificado</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td class="sticky-col">Bodega</td><td><span class="no">No</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td class="sticky-col">Zona / perfil</td><td>Corredor joven y activo</td><td><span class="hl">Zona más exclusiva del norte</span></td></tr>
+          <tr><td class="sticky-col">Plusvalía a 5 años</td><td>Alta — zona en crecimiento</td><td><span class="hl">Muy alta — zona consolidada</span></td></tr>
+          <tr><td class="sticky-col">Renta estimada post-uso</td><td>$14,000–$18,000/mes</td><td><span class="hl">$18,000–$25,000/mes</span></td></tr>
+          <tr><td class="sticky-col">Recurso propio</td><td><span class="yes">✓ Sí</span></td><td><span class="yes">✓ Sí</span></td></tr>
+          <tr><td class="sticky-col">Crédito bancario</td><td><span class="yes">✓ Sí</span></td><td><span class="yes">✓ Sí</span></td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 
   <!-- ANALYSIS TABS -->
   <div class="section-head reveal">
-    <h2>Análisis por objetivo del comprador</h2>
-    <p>La mejor propiedad cambia según la prioridad real del cliente</p>
+    <h2>Lo que más le importa a usted</h2>
+    <p>Hoy sus hijos necesitan el lugar perfecto para vivir y crecer. Mañana, usted quiere un activo que trabaje para su patrimonio. Aquí evaluamos ambos escenarios.</p>
   </div>
   <div class="reveal">
     <div class="tabs-nav">
-      <button class="tab-btn active" onclick="switchTab('inv',this)">↑ Máxima inversión</button>
-      <button class="tab-btn" onclick="switchTab('fam',this)">◈ Uso familiar</button>
-      <button class="tab-btn" onclick="switchTab('bal',this)">— Equilibrio</button>
+      <button class="tab-btn active" onclick="switchTab('uni',this)">◈ Para sus hijos hoy</button>
+      <button class="tab-btn" onclick="switchTab('inv',this)">▲ Para su patrimonio mañana</button>
+      <button class="tab-btn" onclick="switchTab('fin',this)">§ Los números reales</button>
     </div>
 
-    <div class="tab-pane active" id="tab-inv">
+    <div class="tab-pane active" id="tab-uni">
       <div class="analysis-grid">
         <div class="a-box">
-          <h4>› Para inversión: Casa Oliver sigue siendo sólida</h4>
+          <h4>› M10 es el hogar perfecto para estudiar y vivir</h4>
           <ul>
-            <li class="pro"><strong>Precio/m² más bajo</strong> de las tres ($27–28K) — mayor volumen de espacio por peso invertido</li>
-            <li class="pro"><strong>$1.7–2M de presupuesto libre</strong> post-compra para mejoras y reserva operativa</li>
-            <li class="pro"><strong>Paneles solares</strong> reducen gastos operativos reales desde el primer mes</li>
-            <li class="pro">San Sebastián en <strong>máxima apreciación 2024–2026</strong> — compradores extranjeros empujan la plusvalía</li>
-            <li class="con">Sin entrada independiente al área de huéspedes — <strong>renta dual no es viable</strong> en la práctica</li>
-            <li class="con">Renta vacacional estimada baja a <strong>$70–110K/mes</strong> al operar como unidad única</li>
+            <li class="pro"><strong>Workspace con wifi de alta velocidad incluido</strong> — sus hijos pueden estudiar, hacer videoconferencias y trabajar en equipo sin salir del edificio</li>
+            <li class="pro"><strong>Sala de juntas y videocall booth</strong> — para esos proyectos universitarios en equipo que siempre se hacen a última hora</li>
+            <li class="pro"><strong>Roof garden comunitario</strong> — el lugar ideal para convivir con amigos, relajarse y disfrutar la etapa universitaria al máximo</li>
+            <li class="pro"><strong>Amueblado y listo desde el primer día</strong> — sus hijos llegan con su maleta y ya. Sin gastos adicionales en muebles ni tiempo perdido equipando</li>
+            <li class="pro"><strong>Montebello es el corredor universitario de Mérida</strong> — restaurantes, cafeterías, vida social activa y vecinos de su misma edad</li>
+            <li class="con">No cuenta con alberca ni gimnasio propios — aunque el roof garden y workspace compensan bien para el perfil universitario</li>
           </ul>
         </div>
         <div class="a-box">
-          <h4>— Casa Hermana como inversión</h4>
+          <h4>— Altea en el día a día universitario</h4>
           <ul>
-            <li class="pro"><strong>Calle 51 Centro</strong> — la dirección de mayor caché de las tres, el mercado la reconoce a largo plazo</li>
-            <li class="pro">Mayor potencial de renta vacacional: <strong>$81–130K/mes</strong> por ubicación y 4.5 baños</li>
-            <li class="con">Precio/m² de <strong>$43K vs $27K</strong> de Oliver — se paga por ubicación, no por superficie</li>
-            <li class="con">Solo <strong>~$400K libres</strong> post-compra — margen operativo muy ajustado</li>
-            <li class="con"><strong>Due diligence crítico</strong> — 60 años de antigüedad exige revisión profunda de instalaciones antes de cerrar</li>
+            <li class="pro"><strong>Alberca y gimnasio incluidos</strong> — bienestar físico y descanso de calidad dentro del mismo complejo</li>
+            <li class="pro"><strong>Más cerca de la UVM</strong> — aproximadamente 4 minutos menos de trayecto cada día, que se agradece cuando hay clases temprano</li>
+            <li class="pro"><strong>2 cajones de estacionamiento</strong> — si cada hijo tiene su propio coche, no hay de qué preocuparse</li>
+            <li class="con"><strong>No incluye muebles</strong> — considerar un presupuesto adicional de $80K–$150K para equiparlo antes de que sus hijos lleguen</li>
+            <li class="con"><strong>Altabrisa es zona residencial y ejecutiva</strong> — menos orientada a la vida universitaria activa que Montebello</li>
+            <li class="con">El fondo de reserva mensual de $6,000 es un costo adicional que vale la pena contemplar en su presupuesto mensual</li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="tab-pane" id="tab-fam">
+    <div class="tab-pane" id="tab-inv">
       <div class="analysis-grid">
         <div class="a-box">
-          <h4>› Para familia: Casa Hermana gana claramente</h4>
+          <h4>› Altea como activo de largo plazo</h4>
           <ul>
-            <li class="pro"><strong>4.5 baños</strong> — nadie comparte baño con nadie. Para familia de 3 hijas con parejas esto no es un lujo, es convivencia sin fricción cotidiana</li>
-            <li class="pro"><strong>3 niveles</strong> crean separación natural entre generaciones dentro de la misma propiedad</li>
-            <li class="pro"><strong>Cuarto de servicio</strong> resuelto para quien maneje la casa en ausencias</li>
-            <li class="pro"><strong>Calle 51 Centro</strong> — dirección que el círculo social del cliente reconoce y valora</li>
-            <li class="con">Sin estacionamiento — limitación real para familia con varios vehículos</li>
-            <li class="con">3 niveles puede volverse incómodo con el paso de los años — factor a proyectar</li>
+            <li class="pro"><strong>Altabrisa es la zona de mayor plusvalía del norte de Mérida</strong> — un mercado maduro, consolidado y con demanda constante de arrendatarios premium</li>
+            <li class="pro"><strong>Renta estimada entre $18,000 y $25,000 al mes</strong> una vez que sus hijos terminen — atrayendo perfiles ejecutivos y familias de alto nivel</li>
+            <li class="pro"><strong>Solo 26 departamentos en todo el desarrollo</strong> — la exclusividad protege el valor de su inversión a largo plazo</li>
+            <li class="pro">Como inversionista con experiencia en mercados internacionales, Altabrisa representa el activo de mayor liquidez y menor riesgo de las dos opciones</li>
+            <li class="pro">Hospitaless, plazas comerciales y servicios a minutos — la demanda de renta aquí no para, en ningún escenario económico</li>
           </ul>
         </div>
         <div class="a-box">
-          <h4>— Factores de convivencia comparados</h4>
+          <h4>— M10 como inversión futura</h4>
           <ul>
-            <li><strong>Baños:</strong> Hermana (4.5) › Oliver (3) = Suspiro (3)</li>
-            <li><strong>Separación por niveles:</strong> Hermana (3 niveles) › Oliver (1+área) › Suspiro (1 planta)</li>
-            <li><strong>Espacio construido:</strong> Oliver (300m²) › Hermana (223m²) › Suspiro (175m²)</li>
-            <li><strong>Terreno:</strong> Suspiro (381m²) › Oliver (354m²) › Hermana (242m²)</li>
-            <li><strong>Estacionamiento:</strong> Solo Suspiro</li>
-            <li><strong>Privacidad huéspedes:</strong> Las tres requieren acceso compartido — ninguna tiene unidad totalmente independiente</li>
+            <li class="pro"><strong>Montebello está en pleno crecimiento</strong> — una zona que sigue ganando valor año con año, con gran atractivo para el mercado joven y profesional</li>
+            <li class="pro"><strong>Renta estimada entre $14,000 y $18,000 al mes</strong> — altísima demanda de jóvenes profesionales y estudiantes de posgrado</li>
+            <li class="pro"><strong>57 departamentos en el desarrollo</strong> — hay más competencia interna al momento de rentar, algo a considerar</li>
+            <li class="con">El perfil de inquilino joven puede implicar mayor rotación — aunque también mayor demanda constante</li>
+            <li class="con">Para un portafolio de largo plazo, Altabrisa genera mayor renta y plusvalía — aunque M10 también es un activo sólido y atractivo</li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="tab-pane" id="tab-bal">
+    <div class="tab-pane" id="tab-fin">
       <div class="analysis-grid">
         <div class="a-box">
-          <h4>› Recomendación final para este cliente</h4>
+          <h4>› Lo que pagará cada mes, sin letra chica</h4>
           <ul>
-            <li class="pro"><strong>Uso 100% familiar, presupuesto hasta $10M:</strong> Casa Hermana — los 4.5 baños y la dirección justifican el precio</li>
-            <li class="pro"><strong>Presupuesto ajustado o prioridad en espacio:</strong> Casa Oliver — mayor m² por peso, barrio en auge, enganche más bajo</li>
-            <li class="pro"><strong>Perfil más privado o familiar pequeño:</strong> Casa Suspiro — mayor terreno, una planta, estacionamiento, acepta crédito</li>
-            <li><strong>Para este cliente específico</strong> (familia numerosa, uso residencial, sin necesidad de renta): <strong>Casa Hermana es la respuesta correcta</strong></li>
+            <li><strong>M10 Montebello:</strong> $4,033 al mes de mantenimiento — un costo fijo bajo, sin sorpresas</li>
+            <li><strong>Altea Altabrisa:</strong> $4,050 de mantenimiento más $6,000 de fondo de reserva = <strong>$10,050 al mes</strong></li>
+            <li class="con">La diferencia mensual es de <strong>$6,017 MXN a favor de M10</strong> — que equivale a $72,204 MXN al año</li>
+            <li class="con">En los 4 años de carrera universitaria, eso representa <strong>$288,816 MXN adicionales</strong> que Altea cuesta más en mantenimiento</li>
+            <li class="pro">M10 también llega amueblado — lo que representa un ahorro inicial de $80,000 a $150,000 pesos que no tendría que invertir en Altea</li>
+            <li><strong>Enganche:</strong> M10 requiere el 30% ($1,197,000) mientras Altea solo pide el 10% ($399,000) — una diferencia importante para planear su flujo de capital</li>
           </ul>
         </div>
         <div class="a-box">
-          <h4>— Argumento de negociación para Casa Hermana</h4>
+          <h4>— Su presupuesto alcanza perfectamente para las dos opciones</h4>
           <ul>
-            <li>Precio de lista $12,500,000 — negociado en <strong>$9,800,000</strong> ya es una diferencia de $2.9M</li>
-            <li><strong>Palanca:</strong> due diligence por antigüedad de 60 años — condicionan el cierre a resultados limpios</li>
-            <li><strong>Argumento adicional:</strong> sin estacionamiento es una limitación real — usar como argumento para mantener el precio negociado</li>
-            <li>Con $9.8M cerrado: presupuesto restante (~$400K) alcanza para gastos notariales y fondo de mantenimiento inicial</li>
-            <li><strong>Prioridad antes de firmar:</strong> revisar instalaciones hidráulicas, eléctricas y estructura — 60 años sin ese dato es riesgo abierto</li>
+            <li><strong>M10 Montebello:</strong> $3,990,000 + gastos notariales estimados de $200,000–$250,000 = <strong>~$4.2M total</strong> — <span style="color:var(--teal-bright);font-weight:700;">dentro de su presupuesto</span></li>
+            <li><strong>Altea Altabrisa:</strong> $3,990,000 + gastos notariales estimados de $200,000–$250,000 = <strong>~$4.2M total</strong> — <span style="color:var(--teal-bright);font-weight:700;">dentro de su presupuesto</span></li>
+            <li>Las dos opciones caben perfectamente dentro de su presupuesto de $4.3M, incluyendo todos los gastos notariales</li>
+            <li class="pro">M10 le libera más dinero cada mes — que puede destinarse cómodamente a los gastos universitarios de sus hijos</li>
+            <li>Desde una perspectiva de inversión, esos $288,000 adicionales en 4 años son el precio de tener el activo premium de Altabrisa — una decisión que muchos inversionistas consideran válida</li>
           </ul>
         </div>
       </div>
@@ -1092,40 +705,33 @@
 
   <!-- VERDICTS -->
   <div class="section-head reveal">
-    <h2>Veredictos finales</h2>
-    <p>Una sola línea por propiedad — sin ambigüedad</p>
+    <h2>Nuestra recomendación, con toda honestidad</h2>
+    <p>Porque su tranquilidad — y la de sus hijos — es lo que guía este análisis</p>
   </div>
   <div class="verdicts-grid">
     <div class="v-card reveal">
-      <div class="v-icon">◆</div>
-      <div class="v-prop">Primera opción · Calle 51 #474A</div>
-      <div class="v-title">Casa Hermana gana para uso familiar</div>
-      <p class="v-text">Para una familia con 3 hijas adultas con parejas, los 4.5 baños y los 3 niveles resuelven la convivencia sin fricciones. Calle 51 Centro es la dirección de mayor peso de las tres. A $9.8M negociado con todo incluido, es la decisión más inteligente para este perfil. <strong>Pendiente: due diligence en instalaciones.</strong></p>
+      <div class="v-icon">★</div>
+      <div class="v-prop">La elección de sus hijos · M10 Montebello</div>
+      <div class="v-title">M10: el hogar que sus hijos van a querer</div>
+      <p class="v-text">Amueblado desde el primer día, workspace con wifi, roof garden y la energía de Montebello a la puerta. Sus hijos van a tener todo lo que necesitan para estudiar, convivir y disfrutar su etapa universitaria — con $6,000 menos de gasto mensual. <strong>Si lo más importante hoy son sus hijos, M10 es la respuesta natural.</strong></p>
     </div>
     <div class="v-card v-gold reveal">
-      <div class="v-icon">▲</div>
-      <div class="v-prop">Segunda opción · EB-VV4690</div>
-      <div class="v-title">Casa Oliver — la mejor ecuación financiera</div>
-      <p class="v-text">El precio/m² más bajo de las tres, el mayor espacio construido, paneles solares y $2M libres post-compra. Si el presupuesto disponible es hasta $8.5M o si el cliente prioriza margen financiero sobre baños y dirección, Casa Oliver es la respuesta correcta.</p>
-    </div>
-    <div class="v-card v-dark reveal">
-      <div class="v-icon">◦</div>
-      <div class="v-prop">Tercera opción · EB-WD4928</div>
-      <div class="v-title">Casa Suspiro — belleza sin capacidad suficiente</div>
-      <p class="v-text">La más estética de las tres, mayor terreno y la única con estacionamiento. Ideal para pareja o comprador individual. Para este grupo familiar específico queda corta en espacio y baños — pero si el presupuesto cambia o el perfil del comprador evoluciona, es una propiedad imbatible.</p>
+      <div class="v-icon">◆</div>
+      <div class="v-prop">La elección del inversionista · Altea Altabrisa</div>
+      <div class="v-title">Altea: el activo que sigue creciendo</div>
+      <p class="v-text">Altabrisa es la zona más sólida del norte de Mérida — con plusvalía consolidada, demanda constante y un perfil de arrendatario premium que protege el valor de su inversión. El costo mensual es más alto, pero es el precio justo por el activo de mayor retorno a largo plazo. <strong>Si su mirada está puesta en el futuro, Altea es la apuesta inteligente.</strong></p>
     </div>
   </div>
 
-</div><!-- /wrap -->
+</div>
 
 <!-- FOOTER -->
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-brand">
       <img src="logoblancotres.png" alt="TRES65 Inmobiliaria"
-           onerror="this.outerHTML='<span style=\'font-family:Raleway,sans-serif;font-size:1.2rem;font-weight:800;color:#2aaa99\'>TRES65</span>'"
-           style="filter: brightness(0) invert(1);">
-      <p>Especialistas en propiedades del<br>Centro Histórico de Mérida, Yucatán.<br>www.tres65inmobiliaria.com</p>
+           onerror="this.outerHTML='<span style=\'font-family:Raleway,sans-serif;font-size:1.2rem;font-weight:800;color:#2aaa99\'>TRES65</span>'">
+      <p>Especialistas en propiedades del<br>norte y Centro Histórico de Mérida.<br>www.tres65inmobiliaria.com</p>
     </div>
     <div class="footer-agent">
       <div class="agent-name">Damara Traconis Corres</div>
@@ -1138,22 +744,21 @@
   </div>
   <hr class="footer-hr">
   <div class="footer-bottom">
-    <span>© 2026 TRES65 Inmobiliaria® · Marca registrada · Todos los derechos reservados</span>
+    <span>© 2026 TRES65 Inmobiliaria® · Todos los derechos reservados</span>
     <span>Análisis confidencial · Precios sujetos a cambios · No incluye impuestos ni gastos notariales · NOM-247-SE-2022</span>
   </div>
 </footer>
 
 <script>
-  // Confidential overlay — show always on first load of session
-  function closeMobileOverlay() {
-    document.getElementById('mobile-overlay').style.display = 'none';
-    sessionStorage.setItem('mo_dismissed', '1');
+  function closeOverlay() {
+    document.getElementById('conf-overlay').style.display = 'none';
+    sessionStorage.setItem('conf_dismissed','1');
   }
-  function checkMobile() {
-    if (sessionStorage.getItem('mo_dismissed')) return;
-    document.getElementById('mobile-overlay').style.display = 'flex';
-  }
-  window.addEventListener('DOMContentLoaded', checkMobile);
+  window.addEventListener('DOMContentLoaded', () => {
+    if (!sessionStorage.getItem('conf_dismissed')) {
+      document.getElementById('conf-overlay').style.display = 'flex';
+    }
+  });
 
   function switchTab(id, btn) {
     document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
@@ -1167,7 +772,6 @@
   }, { threshold: 0.08 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-  // animate score bars on reveal
   const io2 = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) {
